@@ -1,92 +1,52 @@
-name: 📰 Daily Tech News Aggregator v2.1
+name: Daily Tech News Aggregator v3.0
 
 on:
   schedule:
-    # 每天北京时间早上8点运行 (UTC 0点)
-    - cron: '0 0 * * *'
-  
-  # 允许手动触发
-  workflow_dispatch:
-    inputs:
-      enable_translation:
-        description: '启用翻译功能'
-        required: false
-        default: true
-        type: boolean
+    - cron: '0 0 * * *'  # 每天UTC 0点运行
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   collect-tech-news:
     runs-on: ubuntu-latest
     
     steps:
-    # 1. 检出代码
-    - name: 📥 Checkout Repository
+    - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-    
-    # 2. 设置Python环境
-    - name: 🐍 Setup Python
+      
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
-        cache: 'pip'
-    
-    # 3. 安装依赖
-    - name: 📦 Install Dependencies
+        python-version: '3.11'
+        
+    - name: Install dependencies
       run: |
-        pip install --upgrade pip
+        python -m pip install --upgrade pip
         pip install -r requirements.txt
-    
-    # 4. 配置Git
-    - name: ⚙️ Configure Git
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "Tech News Bot"
-    
-    # 5. 运行新闻收集 (v2.1 GitHub优化版)
-    - name: 🔍 Collect Premium Tech News (GitHub Optimized)
+        
+    - name: Run tech news aggregator
       env:
         DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        GMAIL_USER: ${{ secrets.GMAIL_USER }}
-        GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-        RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
-        ENABLE_TRANSLATION: ${{ github.event.inputs.enable_translation || 'true' }}
-        GITHUB_ACTIONS: true
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+        SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
+        RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
       run: |
-        echo "🚀 开始收集高质量科技资讯 (v2.1 GitHub优化版)..."
-        echo "🎯 专注五大核心领域：GitHub、AI、创业、硅谷、科技"
-        echo "🛡️ 增强错误处理和重试机制"
         python main.py
-    
-    # 6. 检查生成的文件
-    - name: 📄 Check Generated Files
-      run: |
-        echo "📁 检查生成的文件:"
-        ls -la output/ || echo "output目录不存在"
-        ls -la *.md || echo "没有找到markdown文件"
-    
-    # 7. 提交更改到仓库
-    - name: 💾 Commit Changes
-      run: |
-        git add .
-        if git diff --staged --quiet; then
-          echo "没有新的更改需要提交"
-        else
-          git commit -m "📰 Daily tech news update - $(date +'%Y-%m-%d %H:%M:%S')"
-          git push
-          echo "✅ 更改已提交并推送"
-        fi
-    
-    # 8. 上传报告作为Artifacts
-    - name: 📤 Upload Reports
-      uses: actions/upload-artifact@v4
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
       with:
         name: daily-reports-${{ github.run_number }}
-        path: |
-          output/*.md
-          latest_report.md
-        retention-days: 30
+        path: output/
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "📰 Daily tech news update - $(date +'%Y-%m-%d')" || exit 0
+        git push
 
 # 工作流权限
 permissions:

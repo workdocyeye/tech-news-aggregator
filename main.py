@@ -1,501 +1,388 @@
 #!/usr/bin/env python3
 """
-科技资讯聚合系统 v2.1 - GitHub Actions优化版
-专为GitHub Actions环境优化，提供更好的稳定性和错误处理
-支持60+信息源，生成SRT字幕文件
+科技资讯聚合系统 v3.0
+简化版本 - 只生成三个文件：中文版本、英文版本、SRT中文字幕
 """
 
-import os
-import sys
-import time
-import json
 import feedparser
 import requests
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import List, Dict, Optional
+import json
+import sys
 import traceback
+from typing import List, Dict, Optional
+import time
 import re
+from bs4 import BeautifulSoup
 
-# 导入自定义模块
-from premium_sources import GitHubOptimizedSources
-from intelligent_classifier import IntelligentClassifier
-from report_generator import ReportGenerator
-from notification_system import NotificationSystem
+# 导入模块
+from rss_sources import get_rss_sources
+from smart_translator import SmartTranslator
+from srt_generator import SRTGenerator
 
-class GitHubOptimizedAggregator:
-    """GitHub Actions优化版科技资讯聚合器 v2.1"""
+class TechNewsAggregator:
+    """科技资讯聚合器 - 简化版"""
     
     def __init__(self):
-        print("🚀 初始化GitHub Actions优化版聚合器 v2.1...")
+        self.sources = get_rss_sources()
         
-        # 初始化组件
-        self.sources_manager = GitHubOptimizedSources()
-        self.classifier = IntelligentClassifier()
-        self.report_generator = ReportGenerator()
-        self.notification_system = NotificationSystem()
+        # 初始化翻译器
+        try:
+            self.translator = SmartTranslator()
+            self.translation_enabled = True
+            print("✅ 智能翻译器已启用")
+        except Exception as e:
+            print(f"⚠️ 翻译器初始化失败: {e}")
+            self.translator = None
+            self.translation_enabled = False
         
-        # 配置参数
-        self.max_retries = 3
-        self.retry_delay = 2  # 秒
-        self.timeout = 30  # 秒
-        self.min_articles_threshold = 10  # 最少文章数量（提高阈值）
-        
-        # 打印信息源统计
-        self.sources_manager.print_sources_summary()
-        
-        print("✅ 初始化完成")
+        # 初始化SRT生成器
+        self.srt_generator = SRTGenerator()
+        print("✅ SRT字幕生成器已启用")
     
     def run_daily_collection(self):
-        """运行每日收集任务 - GitHub Actions优化版 v2.1"""
-        print("\n🚀 开始每日科技资讯收集 (v2.1)")
-        print("📊 信息源已扩展至60+个优质科技媒体")
-        print("🎬 新增SRT字幕文件生成功能")
-        print("🎯 专注十大核心领域：AI、GitHub、创业、硅谷、科技、开源、企业、移动、安全、Web开发")
-        print("🛡️ 增强错误处理和重试机制")
-        print("=" * 80)
+        """运行每日收集任务"""
+        print(f"🚀 开始收集科技资讯...")
+        print(f"📡 RSS源数量: {len(self.sources)}")
         
-        try:
-            # 1. 收集RSS数据（带重试机制）
-            print("📡 正在收集RSS数据...")
-            news_data = self._collect_rss_data_with_retry()
-            print(f"✅ 收集完成，共获取 {len(news_data)} 条资讯")
-            
-            # 检查最少文章数量
-            if len(news_data) < self.min_articles_threshold:
-                print(f"⚠️ 文章数量过少 ({len(news_data)} < {self.min_articles_threshold})")
-                print("🔄 尝试使用备用策略...")
-                news_data = self._fallback_collection_strategy()
-            
-            # 2. 智能分类和处理
-            print("🧠 正在进行智能分类和处理...")
-            classified_data = self._classify_and_process(news_data)
-            print(f"✅ 分类完成，保留 {len(classified_data)} 条高质量资讯")
-            
-            # 3. 生成分类统计
-            self._print_classification_stats(classified_data)
-            
-            # 4. 生成三个版本的报告（包含SRT字幕）
-            print("📝 正在生成多版本报告...")
-            versions = self.report_generator.generate_all_versions(classified_data)
-            print("✅ 报告生成完成")
-            
-            # 打印版本信息
-            self._print_versions_info(versions)
-            
-            # 5. 发送邮件通知（带错误处理）
-            print("📧 正在发送邮件通知...")
-            try:
-                success = self.notification_system.send_daily_reports(versions)
-                if success:
-                    print("✅ 邮件发送成功")
-                else:
-                    print("⚠️ 邮件发送失败，但系统继续运行")
-            except Exception as e:
-                print(f"⚠️ 邮件发送异常: {e}")
-                print("📧 邮件功能可能需要配置环境变量")
-            
-            # 6. 保存到GitHub
-            self._save_for_github(versions, classified_data)
-            
-            print("🎉 每日收集任务完成！")
-            print("💡 基于GitHub Actions优化的高质量信息源")
-            print("🎬 SRT字幕文件已生成，可直接用于播客制作")
-            
-        except Exception as e:
-            print(f"❌ 任务执行失败: {e}")
-            traceback.print_exc()
-            
-            # 尝试生成错误报告
-            self._generate_error_report(str(e))
-            sys.exit(1)
+        # 收集RSS数据
+        news_data = self._collect_rss_data()
+        
+        if not news_data:
+            print("❌ 未收集到任何新闻数据")
+            self._generate_error_report("未收集到任何新闻数据")
+            return
+        
+        print(f"📰 收集到 {len(news_data)} 条新闻")
+        
+        # 去重和过滤
+        filtered_data = self._remove_duplicates(news_data)
+        print(f"🔄 去重后剩余 {len(filtered_data)} 条新闻")
+        
+        # 生成三个版本的报告
+        self._generate_reports(filtered_data)
+        
+        print("✅ 任务完成！")
     
-    def _collect_rss_data_with_retry(self) -> List[Dict]:
-        """带重试机制的RSS数据收集"""
+    def _collect_rss_data(self) -> List[Dict]:
+        """收集RSS数据"""
         all_news = []
-        sources = self.sources_manager.get_all_sources()
         
-        # 按可靠性排序，优先处理高可靠性源
-        sources.sort(key=lambda x: (
-            x.get('reliability') == 'excellent',
-            x.get('priority') == 'high'
-        ), reverse=True)
-        
-        successful_sources = 0
-        failed_sources = []
-        
-        for source in sources:
-            print(f"📡 处理: {source['name']}...", end=' ')
-            
-            success = False
-            for attempt in range(self.max_retries):
-                try:
-                    # 设置超时和用户代理
-                    headers = {
-                        'User-Agent': 'Mozilla/5.0 (compatible; TechNewsBot/2.1; +https://github.com/tech-news-bot)'
-                    }
-                    
-                    # 使用requests获取RSS内容
-                    response = requests.get(
-                        source['url'], 
-                        headers=headers, 
-                        timeout=self.timeout
-                    )
-                    response.raise_for_status()
-                    
-                    # 解析RSS
-                    feed = feedparser.parse(response.content)
-                    
-                    if not feed.entries:
-                        print(f"❌ 无内容 (尝试 {attempt + 1}/{self.max_retries})")
-                        if attempt < self.max_retries - 1:
-                            time.sleep(self.retry_delay)
-                        continue
-                    
-                    # 处理RSS条目
-                    recent_count = 0
-                    for entry in feed.entries[:20]:  # 限制处理数量
-                        try:
-                            news_item = self._parse_rss_entry(entry, source)
-                            if news_item and self._is_recent_news(news_item.get('time')):
-                                all_news.append(news_item)
-                                recent_count += 1
-                        except Exception as parse_error:
-                            print(f"解析条目错误: {parse_error}")
-                            continue
-                    
-                    print(f"✅ {recent_count}条")
-                    successful_sources += 1
-                    success = True
-                    break
-                    
-                except requests.exceptions.Timeout:
-                    print(f"⏰ 超时 (尝试 {attempt + 1}/{self.max_retries})")
-                except requests.exceptions.RequestException as e:
-                    print(f"🌐 网络错误 (尝试 {attempt + 1}/{self.max_retries}): {str(e)[:30]}...")
-                except Exception as e:
-                    print(f"❌ 错误 (尝试 {attempt + 1}/{self.max_retries}): {str(e)[:30]}...")
+        for source in self.sources:
+            try:
+                print(f"📡 正在收集: {source['name']}")
                 
-                if attempt < self.max_retries - 1:
-                    time.sleep(self.retry_delay * (attempt + 1))  # 递增延迟
-            
-            if not success:
-                failed_sources.append(source['name'])
-        
-        print(f"\n📊 收集统计:")
-        print(f"   ✅ 成功源: {successful_sources}/{len(sources)}")
-        print(f"   ❌ 失败源: {len(failed_sources)}")
-        if failed_sources:
-            print(f"   失败列表: {', '.join(failed_sources[:5])}{'...' if len(failed_sources) > 5 else ''}")
-        
-        return all_news
-    
-    def _fallback_collection_strategy(self) -> List[Dict]:
-        """备用收集策略"""
-        print("🔄 执行备用收集策略...")
-        
-        # 1. 扩展时间窗口到48小时
-        print("   📅 扩展时间窗口到48小时")
-        all_news = []
-        
-        # 只使用最可靠的源
-        reliable_sources = self.sources_manager.get_excellent_reliability_sources()
-        
-        for source in reliable_sources[:10]:  # 限制数量
-            try:
-                feed = feedparser.parse(source['url'])
-                for entry in feed.entries[:30]:  # 增加处理数量
-                    try:
-                        news_item = self._parse_rss_entry(entry, source)
-                        if news_item:
-                            # 扩展时间窗口
-                            cutoff_time = datetime.now() - timedelta(hours=48)
-                            if news_item.get('time') and news_item['time'] > cutoff_time:
-                                all_news.append(news_item)
-                    except:
-                        continue
-            except:
+                # 设置请求头
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                }
+                
+                # 解析RSS
+                feed = feedparser.parse(source['url'], request_headers=headers)
+                
+                if not feed.entries:
+                    print(f"   ⚠️ {source['name']}: 无数据")
+                    continue
+                
+                # 处理每个条目
+                for entry in feed.entries:
+                    news_item = self._parse_rss_entry(entry, source)
+                    if news_item and self._is_recent_news(news_item.get('published_time')):
+                        all_news.append(news_item)
+                
+                print(f"   ✅ {source['name']}: 收集到 {len([e for e in feed.entries if self._parse_rss_entry(e, source)])} 条")
+                time.sleep(1)  # 避免请求过快
+                
+            except Exception as e:
+                print(f"   ❌ {source['name']}: 收集失败 - {e}")
                 continue
         
-        print(f"   📰 备用策略收集到 {len(all_news)} 条资讯")
         return all_news
     
     def _parse_rss_entry(self, entry, source: Dict) -> Optional[Dict]:
         """解析RSS条目"""
         try:
-            # 获取基本信息
+            # 获取标题
             title = entry.get('title', '').strip()
             if not title:
                 return None
             
-            summary = entry.get('summary', entry.get('description', '')).strip()
+            # 获取摘要
+            summary = ''
+            if hasattr(entry, 'summary'):
+                summary = entry.summary
+            elif hasattr(entry, 'description'):
+                summary = entry.description
+            
+            # 清理HTML标签
+            if summary:
+                summary = BeautifulSoup(summary, 'html.parser').get_text().strip()
+            
+            # 获取链接
             link = entry.get('link', '')
             
-            # 解析时间
-            pub_time = self._parse_time(entry.get('published', ''))
+            # 获取发布时间
+            published_time = None
+            if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                published_time = datetime(*entry.published_parsed[:6])
             
             return {
                 'title': title,
-                'summary': summary[:500],  # 限制摘要长度
+                'summary': summary[:300] if summary else '',  # 限制摘要长度
                 'url': link,
                 'source': source['name'],
                 'category': source['category'],
-                'time': pub_time,
-                'priority': source.get('priority', 'medium'),
-                'reliability': source.get('reliability', 'good')
+                'published_time': published_time,
+                'time': published_time.strftime('%Y-%m-%d %H:%M') if published_time else ''
             }
+            
         except Exception as e:
-            print(f"解析RSS条目错误: {e}")
             return None
     
-    def _parse_time(self, time_str: str) -> datetime:
-        """解析时间字符串"""
-        try:
-            import dateutil.parser
-            parsed_time = dateutil.parser.parse(time_str)
-            if parsed_time.tzinfo is not None:
-                parsed_time = parsed_time.replace(tzinfo=None)
-            return parsed_time
-        except:
-            return datetime.now()
-    
     def _is_recent_news(self, news_time) -> bool:
-        """检查是否为最近的新闻"""
-        if not isinstance(news_time, datetime):
+        """检查是否为最近的新闻（24小时内）"""
+        if not news_time:
+            return True  # 如果没有时间信息，默认包含
+        
+        try:
+            if isinstance(news_time, str):
+                return True  # 简化处理
+            
+            now = datetime.now()
+            time_diff = now - news_time
+            return time_diff.days <= 1
+        except:
             return True
-        
-        cutoff_time = datetime.now() - timedelta(hours=24)
-        return news_time > cutoff_time
-    
-    def _classify_and_process(self, news_data: List[Dict]) -> List[Dict]:
-        """分类和处理新闻数据"""
-        if not news_data:
-            return []
-        
-        # 去重
-        unique_news = self._remove_duplicates(news_data)
-        print(f"   🔄 去重后: {len(unique_news)} 条")
-        
-        # 智能分类
-        classified_news = []
-        for news in unique_news:
-            try:
-                classified = self.classifier.classify_news(news)
-                classified_news.append(classified)
-            except Exception as e:
-                print(f"分类错误: {e}")
-                classified_news.append(news)  # 保留原始数据
-        
-        # 按综合评分排序
-        classified_news.sort(
-            key=lambda x: x.get('综合评分', 0), 
-            reverse=True
-        )
-        
-        return classified_news
     
     def _remove_duplicates(self, news_data: List[Dict]) -> List[Dict]:
-        """去重处理"""
+        """去除重复新闻"""
         seen_titles = set()
         unique_news = []
         
         for news in news_data:
-            title_key = news.get('title', '').lower().strip()
-            if title_key and title_key not in seen_titles:
-                seen_titles.add(title_key)
+            title = news.get('title', '').lower().strip()
+            if title and title not in seen_titles:
+                seen_titles.add(title)
                 unique_news.append(news)
         
-        return unique_news
+        # 按时间排序
+        unique_news.sort(key=lambda x: x.get('published_time') or datetime.min, reverse=True)
+        
+        return unique_news[:30]  # 只保留最新的30条
     
-    def _print_classification_stats(self, classified_data: List[Dict]):
-        """打印分类统计 - 优化版"""
-        if not classified_data:
-            print("⚠️ 没有分类数据")
-            return
-        
-        # 统计分类
-        category_stats = {}
-        priority_stats = {}
-        reliability_stats = {}
-        
-        for news in classified_data:
-            # 分类统计
-            main_cat = news.get('主分类', news.get('category', '未分类'))
-            category_stats[main_cat] = category_stats.get(main_cat, 0) + 1
-            
-            # 优先级统计
-            priority = news.get('priority', 'medium')
-            priority_stats[priority] = priority_stats.get(priority, 0) + 1
-            
-            # 可靠性统计
-            reliability = news.get('reliability', 'good')
-            reliability_stats[reliability] = reliability_stats.get(reliability, 0) + 1
-        
-        print("\n📊 分类统计:")
-        
-        # 分类分布
-        print("   📂 分类分布:")
-        categories = self.sources_manager.get_categories()
-        for category, count in sorted(category_stats.items(), key=lambda x: x[1], reverse=True):
-            category_name = categories.get(category, category)
-            percentage = count / len(classified_data) * 100
-            print(f"      {category_name}: {count} 条 ({percentage:.1f}%)")
-        
-        # 优先级分布
-        print("   🔥 优先级分布:")
-        for priority, count in sorted(priority_stats.items(), key=lambda x: x[1], reverse=True):
-            percentage = count / len(classified_data) * 100
-            icon = "🔥" if priority == "high" else "📌" if priority == "medium" else "📝"
-            print(f"      {icon} {priority}: {count} 条 ({percentage:.1f}%)")
-    
-    def _print_versions_info(self, versions: Dict[str, str]):
-        """打印版本信息"""
-        print("📋 生成版本信息:")
-        for version_name, content in versions.items():
-            char_count = len(content)
-            line_count = content.count('\n')
-            
-            if version_name == 'english':
-                print(f"   📄 英文版: {char_count:,} 字符, {line_count} 行")
-            elif version_name == 'bilingual':
-                print(f"   🌏 中英混合版: {char_count:,} 字符, {line_count} 行")
-            elif version_name == 'srt':
-                # 统计SRT字幕条数
-                srt_count = content.count('\n\n') if content else 0
-                print(f"   🎬 SRT字幕版: {srt_count} 条字幕, {char_count:,} 字符")
-    
-    def _save_for_github(self, versions: Dict[str, str], classified_data: List[Dict]):
-        """保存文件供GitHub Actions使用 - 优化版"""
-        print("💾 正在保存文件...")
+    def _generate_reports(self, news_data: List[Dict]):
+        """生成三个版本的报告"""
+        date_str = datetime.now().strftime('%Y-%m-%d')
         
         # 创建输出目录
         output_dir = Path('output')
         output_dir.mkdir(exist_ok=True)
         
+        print("📝 正在生成报告...")
+        
+        # 1. 生成英文版
+        english_content = self._generate_english_report(news_data)
+        english_file = output_dir / f"tech_news_english_{date_str}.md"
+        with open(english_file, 'w', encoding='utf-8') as f:
+            f.write(english_content)
+        print(f"   📄 英文版: {english_file}")
+        
+        # 2. 生成中文版
+        chinese_content = self._generate_chinese_report(news_data)
+        chinese_file = output_dir / f"tech_news_chinese_{date_str}.md"
+        with open(chinese_file, 'w', encoding='utf-8') as f:
+            f.write(chinese_content)
+        print(f"   🇨🇳 中文版: {chinese_file}")
+        
+        # 3. 生成SRT字幕
+        srt_content = self.srt_generator.generate_srt_from_news(news_data)
+        srt_file = output_dir / f"tech_news_subtitles_{date_str}.srt"
+        with open(srt_file, 'w', encoding='utf-8') as f:
+            f.write(srt_content)
+        print(f"   🎬 SRT字幕: {srt_file}")
+        
+        # 生成索引文件
+        self._generate_index_file(date_str, len(news_data))
+        
+        print("✅ 所有报告生成完成")
+    
+    def _generate_english_report(self, news_data: List[Dict]) -> str:
+        """生成英文版报告"""
         date_str = datetime.now().strftime('%Y-%m-%d')
         
-        try:
-            # 保存英文版
-            if 'english' in versions:
-                english_file = output_dir / f"daily_news_english_{date_str}.md"
-                with open(english_file, 'w', encoding='utf-8') as f:
-                    f.write(versions['english'])
-                print(f"   📄 英文版: {english_file}")
-            
-            # 保存中英混合版
-            if 'bilingual' in versions:
-                bilingual_file = output_dir / f"daily_news_bilingual_{date_str}.md"
-                with open(bilingual_file, 'w', encoding='utf-8') as f:
-                    f.write(versions['bilingual'])
-                print(f"   🌏 中英混合版: {bilingual_file}")
-            
-            # 保存SRT字幕版（优先）
-            if 'srt' in versions:
-                srt_file = output_dir / f"podcast_subtitles_{date_str}.srt"
-                with open(srt_file, 'w', encoding='utf-8') as f:
-                    f.write(versions['srt'])
-                print(f"   🎬 SRT字幕版: {srt_file}")
-            
-            # 兼容旧版本的podcast字段（如果存在且没有srt）
-            elif 'podcast' in versions:
-                # 将旧的podcast内容保存为SRT格式
-                srt_file = output_dir / f"podcast_subtitles_{date_str}.srt"
-                with open(srt_file, 'w', encoding='utf-8') as f:
-                    f.write(versions['podcast'])
-                print(f"   🎬 SRT字幕版 (从podcast转换): {srt_file}")
-                
-                # 同时保存原始podcast文件用于调试
-                podcast_file = output_dir / f"podcast_{date_str}.md"
-                with open(podcast_file, 'w', encoding='utf-8') as f:
-                    f.write(versions['podcast'])
-                print(f"   📝 播客版 (调试用): {podcast_file}")
-            
-            # 保存最新报告（用于GitHub Pages）
-            latest_file = Path("latest_report.md")
-            with open(latest_file, 'w', encoding='utf-8') as f:
-                f.write(f"""# 📰 最新科技简报 - {date_str}
+        content = f"""# 🌍 Daily Tech News - {date_str}
 
-## 🔗 今日报告
+## 📊 Today's Overview
+- **Total Articles**: {len(news_data)}
+- **Sources**: {len(set(item['source'] for item in news_data))} tech media outlets
+- **Last Updated**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
-- [📄 英文原版](output/daily_news_english_{date_str}.md)
-- [🌏 中英混合版](output/daily_news_bilingual_{date_str}.md)  
-- [🎬 SRT字幕文件](output/podcast_subtitles_{date_str}.srt)
+## 🔥 Top Stories
+
+"""
+        
+        # 添加前15条重点新闻
+        for i, item in enumerate(news_data[:15], 1):
+            title = item.get('title', 'No Title')
+            summary = item.get('summary', 'No summary available')
+            source = item.get('source', 'Unknown')
+            time_str = item.get('time', 'Unknown')
+            url = item.get('url', '#')
+            
+            content += f"""### {i}. {title}
+**Source**: {source} | **Time**: {time_str}
+**Summary**: {summary}
+**Link**: [Read More]({url})
+
+"""
+        
+        # 按分类添加其他新闻
+        categories = {}
+        for item in news_data[15:]:
+            category = item.get('category', 'Other')
+            if category not in categories:
+                categories[category] = []
+            categories[category].append(item)
+        
+        for category, items in categories.items():
+            if items:
+                content += f"\n## 💻 {category}\n\n"
+                for item in items[:8]:  # 每个分类最多8条
+                    title = item.get('title', 'No Title')
+                    url = item.get('url', '#')
+                    source = item.get('source', 'Unknown')
+                    
+                    content += f"- **[{title}]({url})** - *{source}*\n"
+        
+        content += f"""
+---
+*Generated on {date_str} by Tech News Aggregator v3.0*
+*Total sources processed: {len(news_data)} articles*
+"""
+        
+        return content
+    
+    def _generate_chinese_report(self, news_data: List[Dict]) -> str:
+        """生成中文版报告"""
+        date_str = datetime.now().strftime('%Y-%m-%d')
+        
+        content = f"""# 🌟 每日科技简报 - {date_str}
+
+## 📊 今日概览
+- **资讯总数**: {len(news_data)} 条
+- **信息源**: {len(set(item['source'] for item in news_data))} 个科技媒体
+- **更新时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+## 🔥 重点新闻
+
+"""
+        
+        # 添加前15条重点新闻（翻译版本）
+        for i, item in enumerate(news_data[:15], 1):
+            title = item.get('title', 'No Title')
+            summary = item.get('summary', 'No summary available')
+            source = item.get('source', 'Unknown')
+            time_str = item.get('time', 'Unknown')
+            url = item.get('url', '#')
+            
+            # 翻译标题和摘要
+            if self.translation_enabled:
+                try:
+                    title_cn = self.translator.translate_content(title)
+                    summary_cn = self.translator.translate_content(summary) if summary else '暂无摘要'
+                except:
+                    title_cn = title
+                    summary_cn = summary
+            else:
+                title_cn = title
+                summary_cn = summary
+            
+            content += f"""### {i}. {title_cn}
+**来源**: {source} | **时间**: {time_str}
+**摘要**: {summary_cn}
+**原文**: [查看详情]({url})
+
+"""
+        
+        # 按分类添加其他新闻
+        categories = {}
+        for item in news_data[15:]:
+            category = item.get('category', 'Other')
+            if category not in categories:
+                categories[category] = []
+            categories[category].append(item)
+        
+        # 分类名称映射
+        category_map = {
+            'Tech News': '科技新闻',
+            'Tech Research': '技术研究',
+            'Open Source': '开源项目',
+            'Tech Community': '技术社区',
+            'Startups': '创业资讯',
+            'Enterprise Tech': '企业技术'
+        }
+        
+        for category, items in categories.items():
+            if items:
+                category_cn = category_map.get(category, category)
+                content += f"\n## 💻 {category_cn}\n\n"
+                for item in items[:8]:  # 每个分类最多8条
+                    title = item.get('title', 'No Title')
+                    url = item.get('url', '#')
+                    source = item.get('source', 'Unknown')
+                    
+                    # 翻译标题
+                    if self.translation_enabled:
+                        try:
+                            title_cn = self.translator.translate_content(title)
+                        except:
+                            title_cn = title
+                    else:
+                        title_cn = title
+                    
+                    content += f"- **[{title_cn}]({url})** - *{source}*\n"
+        
+        content += f"""
+---
+*由科技资讯聚合系统 v3.0 于 {date_str} 自动生成*
+*共处理 {len(news_data)} 条资讯*
+"""
+        
+        return content
+    
+    def _generate_index_file(self, date_str: str, total_count: int):
+        """生成索引文件"""
+        index_content = f"""# 📰 科技资讯聚合系统
+
+## 🔗 今日报告 - {date_str}
+
+- [📄 英文版](output/tech_news_english_{date_str}.md)
+- [🇨🇳 中文版](output/tech_news_chinese_{date_str}.md)
+- [🎬 SRT字幕](output/tech_news_subtitles_{date_str}.srt)
 
 ## 📊 统计信息
 
-- **收集时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-- **资讯总数**: {len(classified_data)} 条
-- **信息源**: 60+ 个优质科技媒体
-- **覆盖领域**: AI、GitHub、创业、硅谷、科技、开源、企业、移动、安全、Web开发
+- **生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+- **资讯总数**: {total_count} 条
+- **信息源**: {len(self.sources)} 个优质科技媒体
 
 ## 🎬 SRT字幕使用说明
 
-SRT字幕文件可直接导入以下视频编辑软件：
+SRT字幕文件可直接用于视频编辑软件：
 - Adobe Premiere Pro
 - Final Cut Pro
 - DaVinci Resolve
 - Camtasia
 - OBS Studio
 
-使用方法：
-1. 录制播客音频
-2. 在视频编辑软件中导入音频和SRT文件
-3. 软件会自动同步字幕时间轴
-4. 根据需要调整字幕样式和位置
-
 ---
-*由科技资讯聚合系统 v2.1 自动生成*
-""")
-            print(f"   📋 最新报告: {latest_file}")
-            
-            # 保存统计数据
-            stats_file = output_dir / f"stats_{date_str}.json"
-            stats_data = {
-                'date': date_str,
-                'total_articles': len(classified_data),
-                'generation_time': datetime.now().isoformat(),
-                'versions': {
-                    'english_chars': len(versions.get('english', '')),
-                    'bilingual_chars': len(versions.get('bilingual', '')),
-                    'srt_subtitles': versions.get('srt', '').count('\n\n') if versions.get('srt') else 0
-                },
-                'categories': {}
-            }
-            
-            # 统计分类
-            for item in classified_data:
-                category = item.get('category', item.get('主分类', 'unknown'))
-                stats_data['categories'][category] = stats_data['categories'].get(category, 0) + 1
-            
-            with open(stats_file, 'w', encoding='utf-8') as f:
-                json.dump(stats_data, f, ensure_ascii=False, indent=2)
-            print(f"   📊 统计数据: {stats_file}")
-            
-        except Exception as e:
-            print(f"   ❌ 保存文件失败: {e}")
+*由科技资讯聚合系统 v3.0 自动生成*
+"""
         
-        # 生成运行统计
-        stats = {
-            'date': date_str,
-            'total_articles': len(classified_data),
-            'categories': {},
-            'sources': {},
-            'timestamp': datetime.now().isoformat()
-        }
-        
-        for news in classified_data:
-            # 统计分类
-            main_cat = news.get('主分类', '未分类')
-            stats['categories'][main_cat] = stats['categories'].get(main_cat, 0) + 1
-            
-            # 统计来源
-            source = news.get('source', '未知')
-            stats['sources'][source] = stats['sources'].get(source, 0) + 1
-        
-        stats_file = output_dir / f"stats_{date_str}.json"
-        with open(stats_file, 'w', encoding='utf-8') as f:
-            json.dump(stats, f, ensure_ascii=False, indent=2)
-        print(f"   💾 已保存: {stats_file}")
+        with open('README.md', 'w', encoding='utf-8') as f:
+            f.write(index_content)
+        print(f"   📋 索引文件: README.md")
     
     def _generate_error_report(self, error_message: str):
         """生成错误报告"""
@@ -509,10 +396,9 @@ SRT字幕文件可直接导入以下视频编辑软件：
 1. 网络连接是否正常
 2. RSS源是否可访问
 3. 环境变量是否正确配置
-4. GitHub Actions权限是否充足
 
-## 技术支持
-如需帮助，请在GitHub仓库提交Issue。
+---
+*由科技资讯聚合系统 v3.0 生成*
 """
             
             with open('error_report.md', 'w', encoding='utf-8') as f:
@@ -523,20 +409,18 @@ SRT字幕文件可直接导入以下视频编辑软件：
 
 def main():
     """主函数"""
-    print("🌟 科技资讯聚合系统 v2.1")
-    print("🎯 专注十大核心领域，60+优质信息源")
-    print("🎬 支持SRT字幕文件生成")
-    print("=" * 60)
+    print("🌟 科技资讯聚合系统 v3.0")
+    print("🎯 生成三个版本：中文版、英文版、SRT字幕")
+    print("=" * 50)
     
     try:
-        aggregator = GitHubOptimizedAggregator()
+        aggregator = TechNewsAggregator()
         aggregator.run_daily_collection()
         
         print("\n🎉 系统运行完成！")
         print("💡 查看生成的文件:")
-        print("   - output/ 目录下的报告文件")
-        print("   - latest_report.md 最新报告索引")
-        print("   - SRT字幕文件可直接用于播客制作")
+        print("   - output/ 目录下的三个文件")
+        print("   - README.md 索引文件")
         
     except KeyboardInterrupt:
         print("\n⚠️ 用户中断程序")
