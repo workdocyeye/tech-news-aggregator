@@ -247,6 +247,29 @@ class IntelligentClassifier:
         score += social_matches * 0.2
         
         return min(score, 1.0)
+    
+    def classify_news(self, news_item: Dict) -> Dict:
+        """分类新闻条目（兼容接口）"""
+        title = news_item.get('title', '')
+        summary = news_item.get('summary', '')
+        source_category = news_item.get('category', 'tech')
+        
+        # 使用现有的分类方法
+        result = self.classify_article(title, summary, source_category)
+        
+        # 转换为兼容格式
+        classified_news = news_item.copy()
+        classified_news.update({
+            '主分类': result.primary_category,
+            '次分类': result.secondary_categories,
+            '技术栈': result.tech_stack,
+            '重要性评分': result.importance_score,
+            '趋势性评分': result.trending_score,
+            '关键词': result.keywords,
+            '综合评分': (result.importance_score + result.trending_score) / 2
+        })
+        
+        return classified_news
 
 if __name__ == "__main__":
     # 测试分类器

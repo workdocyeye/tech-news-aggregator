@@ -389,12 +389,26 @@ class GitHubOptimizedAggregator:
                     f.write(versions['bilingual'])
                 print(f"   🌏 中英混合版: {bilingual_file}")
             
-            # 保存SRT字幕版
+            # 保存SRT字幕版（优先）
             if 'srt' in versions:
                 srt_file = output_dir / f"podcast_subtitles_{date_str}.srt"
                 with open(srt_file, 'w', encoding='utf-8') as f:
                     f.write(versions['srt'])
                 print(f"   🎬 SRT字幕版: {srt_file}")
+            
+            # 兼容旧版本的podcast字段（如果存在且没有srt）
+            elif 'podcast' in versions:
+                # 将旧的podcast内容保存为SRT格式
+                srt_file = output_dir / f"podcast_subtitles_{date_str}.srt"
+                with open(srt_file, 'w', encoding='utf-8') as f:
+                    f.write(versions['podcast'])
+                print(f"   🎬 SRT字幕版 (从podcast转换): {srt_file}")
+                
+                # 同时保存原始podcast文件用于调试
+                podcast_file = output_dir / f"podcast_{date_str}.md"
+                with open(podcast_file, 'w', encoding='utf-8') as f:
+                    f.write(versions['podcast'])
+                print(f"   📝 播客版 (调试用): {podcast_file}")
             
             # 保存最新报告（用于GitHub Pages）
             latest_file = Path("latest_report.md")
