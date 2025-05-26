@@ -1,165 +1,191 @@
-# 🚀 科技资讯聚合系统部署指南
+# 📰 科技资讯聚合系统 v3.0 部署指南
 
-## 📋 部署步骤
+## 🌟 项目简介
 
-### 1️⃣ **Fork项目**
-1. 访问项目GitHub页面
-2. 点击右上角 "Fork" 按钮
-3. 选择您的GitHub账号
-4. 等待Fork完成
+科技资讯聚合系统 v3.0 是一个基于GitHub Actions的自动化科技新闻收集和处理系统，专为播客制作和内容创作者设计。
 
-### 2️⃣ **配置Gmail邮件**
-#### 开启两步验证
-1. 登录Gmail → 右上角头像 → "管理您的Google账户"
-2. 左侧选择 "安全性"
-3. 找到 "两步验证" → 点击开启
-4. 按提示完成设置
+### ✨ 核心特性
 
-#### 生成应用专用密码
-1. 在 "安全性" 页面找到 "应用专用密码"
-2. 选择 "邮件" 和 "Windows计算机"
-3. 点击 "生成"
-4. **复制生成的16位密码**（类似：abcd efgh ijkl mnop）
+- **🔄 自动化收集**: 每日自动从50+个优质科技媒体收集最新资讯
+- **📝 三版本输出**: 
+  - 📄 英文原版报告
+  - 🇨🇳 中文翻译版报告  
+  - 🎬 SRT中文字幕文件（播客专用）
+- **🎯 智能筛选**: 自动去重、时间过滤、质量筛选
+- **🌍 多领域覆盖**: AI/ML、开源、创业、移动、安全、Web开发、云计算等
+- **💰 完全免费**: 基于GitHub Actions免费额度运行
 
-### 3️⃣ **配置GitHub Secrets**
-1. 进入您Fork的仓库
-2. 点击 "Settings" → "Secrets and variables" → "Actions"
-3. 点击 "New repository secret" 添加以下配置：
+### 📊 信息源覆盖
 
-#### 必需配置（邮件通知）
+- **主流科技媒体**: TechCrunch, The Verge, Wired, Engadget, Gizmodo
+- **技术研究**: MIT Technology Review, IEEE Spectrum
+- **AI/ML**: OpenAI Blog, Google AI Blog, VentureBeat AI
+- **开源社区**: GitHub Blog, Stack Overflow, Dev.to, Hacker News
+- **创业投资**: VentureBeat, Crunchbase News, Y Combinator
+- **企业技术**: ZDNet, InfoWorld, ComputerWorld
+- **移动应用**: Android Police, 9to5Mac, 9to5Google, MacRumors
+- **网络安全**: Krebs on Security, The Hacker News, Security Week
+- **Web开发**: CSS-Tricks, Smashing Magazine, A List Apart
+- **云计算**: AWS News, Google Cloud, Microsoft Azure, Docker, Kubernetes
+- **数据科学**: KDnuggets, Towards Data Science, Analytics Vidhya
+- **游戏技术**: Gamasutra, Unity Blog
+
+## 🚀 快速开始
+
+### 1. Fork 仓库
+
+点击右上角的 "Fork" 按钮，将仓库复制到您的GitHub账户。
+
+### 2. 配置环境变量
+
+在您的GitHub仓库中，进入 `Settings` > `Secrets and variables` > `Actions`，添加以下环境变量：
+
+#### 必需配置（翻译功能）
 ```
-名称: SMTP_SERVER
-值: smtp.gmail.com
-
-名称: SMTP_PORT  
-值: 587
-
-名称: SENDER_EMAIL
-值: your_email@gmail.com
-
-名称: SENDER_PASSWORD
-值: 刚才生成的16位应用专用密码
-
-名称: RECEIVER_EMAIL
-值: 接收邮件的地址（可以是同一个Gmail）
-```
-
-#### 可选配置（翻译功能）
-```
-名称: DEEPSEEK_API_KEY
-值: 您的Deepseek API密钥（可选，不设置则跳过翻译）
+DEEPSEEK_API_KEY=your_deepseek_api_key
 ```
 
-### 4️⃣ **启用GitHub Actions**
-1. 进入仓库的 "Actions" 标签
-2. 如果看到提示，点击 "I understand my workflows, go ahead and enable them"
-3. 确认工作流已启用
-
-## 🧪 测试方法
-
-### ⚡ **立即测试（不等到早上8点）**
-
-#### 方法1：手动触发工作流
-1. 进入 "Actions" 标签
-2. 选择 "📰 Daily Tech News Aggregator v2.0"
-3. 点击右侧 "Run workflow" 按钮
-4. 点击绿色的 "Run workflow" 确认
-5. 等待3-5分钟查看结果
-
-#### 方法2：修改定时时间（临时测试）
-1. 编辑 `.github/workflows/daily-tech-news.yml`
-2. 找到这行：`- cron: '0 0 * * *'`
-3. 改为当前时间后几分钟，例如：
-   ```yaml
-   # 如果现在是14:30，改为14:35运行
-   - cron: '35 14 * * *'  # UTC时间，需要减8小时
-   ```
-4. 提交更改，等待自动运行
-
-### 📧 **验证邮件接收**
-成功运行后，您会收到邮件：
-- **主题**：📰 每日科技简报 - YYYY-MM-DD
-- **附件**：三个版本的报告文件
-  - `daily_news_english_YYYY-MM-DD.md` - 英文原版
-  - `daily_news_bilingual_YYYY-MM-DD.md` - 中英混合版  
-  - `podcast_script_YYYY-MM-DD.md` - 播客制作版
-
-## ⏰ 关于运行时间
-
-### 🕐 **默认运行时间**
-- **北京时间**：每天早上8:00
-- **UTC时间**：每天凌晨0:00
-- **自动运行**：无需人工干预
-
-### 🔧 **修改运行时间**
-如果想改变运行时间，编辑 `.github/workflows/daily-tech-news.yml`：
-
-```yaml
-schedule:
-  # 北京时间早上8点 = UTC 0点
-  - cron: '0 0 * * *'
-  
-  # 北京时间中午12点 = UTC 4点  
-  - cron: '0 4 * * *'
-  
-  # 北京时间晚上8点 = UTC 12点
-  - cron: '0 12 * * *'
-  
-  # 每12小时运行一次
-  - cron: '0 */12 * * *'
+#### 可选配置（邮件通知）
+```
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SENDER_EMAIL=your_email@gmail.com
+SENDER_PASSWORD=your_app_password
+RECEIVER_EMAIL=recipient@example.com
 ```
 
-### 📱 **多次测试方法**
-1. **手动触发**：随时在Actions页面手动运行
-2. **临时定时**：设置几分钟后的时间测试
-3. **多频率运行**：设置每6小时或12小时运行一次
+### 3. 启用GitHub Actions
 
-## 📊 预期效果
+1. 进入仓库的 `Actions` 标签页
+2. 点击 "I understand my workflows, enable them"
+3. 系统将每天UTC 0点自动运行
 
-### ✅ **成功指标**
-- GitHub Actions运行成功（绿色✅）
-- 收到包含3个附件的邮件
-- 每日收集15-30篇高质量科技资讯
-- 五大领域分类清晰
+### 4. 手动触发测试
 
-### 📈 **信息源成功率预期**
-- **GitHub生态**: 95%+ 
-- **科技媒体**: 90%+
-- **创业投资**: 85%+
-- **AI前沿**: 80%+
-- **硅谷动态**: 75%+
+1. 进入 `Actions` 标签页
+2. 选择 "Daily Tech News Aggregator v3.0"
+3. 点击 "Run workflow" 进行测试
 
-## 🔧 故障排除
+## 📋 输出文件说明
 
-### ❌ **常见问题**
+### 📄 英文版报告 (`tech_news_english_YYYY-MM-DD.md`)
+- 原始英文新闻内容
+- 按重要性排序的前15条重点新闻
+- 按分类整理的其他新闻
+- 包含原文链接和来源信息
 
-#### 1. 邮件发送失败
-- 检查Gmail应用专用密码是否正确
-- 确认开启了两步验证
-- 验证SMTP配置是否正确
+### 🇨🇳 中文版报告 (`tech_news_chinese_YYYY-MM-DD.md`)
+- 智能翻译的中文版本
+- 保护技术术语不被翻译
+- 保留原文链接便于查证
+- 适合中文读者阅读
 
-#### 2. GitHub Actions失败
-- 查看Actions页面的详细日志
-- 检查环境变量是否正确设置
-- 确认仓库权限充足
+### 🎬 SRT字幕文件 (`tech_news_subtitles_YYYY-MM-DD.srt`)
+- 播客专用的中文字幕格式
+- 包含开场白、新闻播报、结束语
+- 时间轴自动计算
+- 可直接导入视频编辑软件
 
-#### 3. 收集到的文章很少
-- 这是正常的，某些源可能24小时内无新内容
-- 系统会自动启用备用策略扩展时间窗口
-- GitHub Actions环境比本地环境成功率更高
+## 🔧 高级配置
 
-### 📞 **获取帮助**
-1. 查看GitHub Actions运行日志
-2. 检查生成的错误报告（如果有）
-3. 在项目仓库提交Issue
+### 自定义RSS源
 
-## 🎉 部署完成
+编辑 `rss_sources.py` 文件，添加或修改RSS源：
 
-恭喜！您的科技资讯聚合系统已成功部署！
+```python
+{
+    'name': '媒体名称',
+    'url': 'RSS链接',
+    'category': '分类',
+    'language': 'en'
+}
+```
 
-- ✅ **自动化运行**：每天定时收集高质量科技资讯
-- ✅ **邮件推送**：三版本报告直达邮箱
-- ✅ **零维护成本**：基于GitHub Actions免费运行
-- ✅ **随时测试**：支持手动触发和自定义时间
+### 调整输出数量
 
-**立即开始您的高质量科技资讯之旅吧！** 🚀 
+在 `main.py` 中修改：
+```python
+return unique_news[:30]  # 修改数字调整输出数量
+```
+
+### 自定义翻译设置
+
+在 `smart_translator.py` 中调整翻译参数和保护词汇。
+
+## 🎬 SRT字幕使用指南
+
+### 支持的视频编辑软件
+- Adobe Premiere Pro
+- Final Cut Pro
+- DaVinci Resolve
+- Camtasia
+- OBS Studio
+
+### 使用步骤
+1. 录制播客音频
+2. 在视频编辑软件中导入音频文件
+3. 导入对应日期的SRT字幕文件
+4. 软件会自动同步字幕时间轴
+5. 根据需要调整字幕样式和位置
+
+### 字幕格式说明
+- 每条字幕2-6秒显示时间
+- 每行最多80个字符
+- 自动计算播报节奏
+- 包含完整的播客脚本结构
+
+## 🔍 故障排除
+
+### 常见问题
+
+**Q: 翻译功能不工作？**
+A: 检查DEEPSEEK_API_KEY是否正确配置，确保API密钥有效。
+
+**Q: 收集到的新闻数量很少？**
+A: 某些RSS源可能暂时不可用，系统会自动跳过并继续处理其他源。
+
+**Q: GitHub Actions运行失败？**
+A: 检查仓库权限设置，确保Actions有写入权限。
+
+**Q: SRT字幕时间不准确？**
+A: 可以在视频编辑软件中手动调整时间轴，或修改`srt_generator.py`中的时间参数。
+
+### 日志查看
+
+在GitHub Actions的运行日志中可以看到：
+- 每个RSS源的收集状态
+- 去重和过滤结果
+- 文件生成情况
+- 错误信息（如有）
+
+## 📈 系统监控
+
+### 运行统计
+- 每次运行会生成统计信息
+- 显示成功/失败的RSS源数量
+- 记录处理的新闻总数
+- 按分类统计新闻分布
+
+### 性能优化
+- 自动重试机制处理网络问题
+- 智能去重避免重复内容
+- 时间过滤确保新闻时效性
+- 限制输出数量控制文件大小
+
+## 🤝 贡献指南
+
+欢迎提交Issue和Pull Request来改进项目：
+
+1. 报告Bug或建议新功能
+2. 添加新的RSS源
+3. 改进翻译质量
+4. 优化SRT字幕格式
+5. 完善文档说明
+
+## 📄 许可证
+
+本项目采用MIT许可证，详见LICENSE文件。
+
+---
+
+**🌟 如果这个项目对您有帮助，请给个Star支持一下！** 

@@ -2,116 +2,130 @@
 
 ## 📊 今日概览
 - **资讯总数**: 30 条
-- **信息源**: 6 个科技媒体
-- **更新时间**: 2025-05-26 20:05:57
+- **信息源**: 8 个科技媒体
+- **更新时间**: 2025-05-26 20:17:14
 
 ## 🔥 重点新闻
 
-### 1. What Is Matter? We Explain the Smart Home Standard (2025)
+### 1. GoPro’s Limited Edition HERO 13 Action Cam Is at Its Lowest Price Ever for Memorial Day’s Limited-Time Sale
+**来源**: Gizmodo | **时间**: 2025-05-26 12:10
+**摘要**: Take this camera wherever you go and save big while sharing your exploits with the whole world.
+**原文**: [查看详情](https://gizmodo.com/gopros-limited-edition-hero-13-action-cam-is-at-its-lowest-price-ever-for-memorial-days-limited-time-sale-2000544623)
+
+### 2. Sam Altman and Jony Ive Will Kill AI Gadgets Long Before They Kill the iPhone
+**来源**: Gizmodo | **时间**: 2025-05-26 12:00
+**摘要**: There's a lot more at stake for AI hardware than there is phones.
+**原文**: [查看详情](https://gizmodo.com/sam-altman-and-jony-ive-will-kill-ai-gadgets-long-before-they-kill-the-iphone-2000606717)
+
+### 3. 10 YouTube Channels Every Aspiring Data Scientist Should Follow in 2025
+**来源**: KDnuggets | **时间**: 2025-05-26 12:00
+**摘要**: Want to be a data scientist in 2025? These 10 YouTube channels teach important skills, from Python basics to advanced machine learning.
+**原文**: [查看详情](https://www.kdnuggets.com/10-youtube-channels-every-aspiring-data-scientist-should-follow-in-2025)
+
+### 4. What Is Matter? We Explain the Smart Home Standard (2025)
 **来源**: Wired | **时间**: 2025-05-26 12:00
 **摘要**: This open source protocol ensures your devices play nicely. Matter 1.4.1 makes setup easier with QR codes or NFC.
 **原文**: [查看详情](https://www.wired.com/story/what-is-matter/)
 
-### 2. Where hyperscale hardware goes to retire: Ars visits a very big ITAD site
+### 5. 🔥 Understanding PDF.js Layers and How to Use them in React.js
+**来源**: Dev.to | **时间**: 2025-05-26 11:58
+**摘要**: PDF files are everywhere but working with PDFs in a React.js project can be frustrating. You might run into clunky plugins, awkward iframes, or glitches that break the user experience. PDF.js gives you a powerful, open-source JavaScript library to display and interact with PDF files right in the bro
+**原文**: [查看详情](https://dev.to/9haroon/understanding-pdfjs-layers-and-how-to-use-them-in-reactjs-586m)
+
+### 6. Stop Repeating Modal Logic! Build a Reusable useModal Hook
+**来源**: Dev.to | **时间**: 2025-05-26 11:56
+**摘要**: Modal is a commonly used component in frontend projects. Many UI libraries provide built-in modal components, making it easy to implement semi-transparent background and dialogs with "Cancel" and "Ok" buttons.
+While developing with React, I like using modals for most user interactions — whether for 
+**原文**: [查看详情](https://dev.to/sheep_/stop-repeating-modal-logic-build-a-reusable-usemodal-hook-19db)
+
+### 7. How to Watch the French Open 2025 Live on a Free Channel
+**来源**: Gizmodo | **时间**: 2025-05-26 11:54
+**摘要**: Clay season's heating up! Check out these free and paid channels to catch every French Open match live.
+**原文**: [查看详情](https://gizmodo.com/how-to-watch-the-french-open-2025-live-on-a-free-channel-2000607202)
+
+### 8. What is ATL Server?
+**来源**: Dev.to | **时间**: 2025-05-26 11:47
+**摘要**: ATL Server
+
+is a technology originally developed by Microsoft for developing web-based applications. It uses a tag replacement engine written in C++ to render web pages. It draws on the existing technologies like ISAPI and the Active Template Library, and includes a template library which is dedicat
+**原文**: [查看详情](https://dev.to/e77/what-is-atl-server-1m1k)
+
+### 9. 𝗙𝗿𝗼𝗺 𝗖𝗼𝗱𝗲 𝘁𝗼 𝗖𝗹𝗼𝘂𝗱 – 𝗛𝗼𝘄 𝗔𝘇𝘂𝗿𝗲 & 𝗔𝘇𝘂𝗿𝗲 𝗗𝗲𝘃𝗢𝗽𝘀 𝗪𝗼𝗿𝗸 𝗧𝗼𝗴𝗲𝘁𝗵𝗲𝗿 𝗦𝗲𝗮𝗺𝗹𝗲𝘀𝘀𝗹𝘆
+**来源**: Dev.to | **时间**: 2025-05-26 11:47
+**摘要**: 𝗪𝗵𝗮𝘁 𝗶𝘀 𝗔𝘇𝘂𝗿𝗲 𝗗𝗲𝘃𝗢𝗽𝘀?
+Azure DevOps is a comprehensive set of tools that automates the software delivery pipeline — from code integration, testing, and build, to deployment. It enables developers to move away from manual processes and adopt fast, consistent, and reliable CI/CD practices.
+𝗞𝗲𝘆 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶
+**原文**: [查看详情](https://dev.to/supraja_tangella_b7f0738e/--4gi5)
+
+### 10. Como Conectar ao DuckDB com C++
+**来源**: Dev.to | **时间**: 2025-05-26 11:44
+**摘要**: Um banco de dados veloz e futurista para seus projetos.
+
+Nós já fizemos um artigo inicial sobre DuckDB que explica conceitos iniciais, instalação e primeiros passos. Para mais informações acesse o link:
+
+Conheça o DuckDB, um banco de dados moderno
+
+Nesse artigo veremos como conectar ao DuckDB usando
+**原文**: [查看详情](https://dev.to/marcosplusplus/como-conectar-ao-duckdb-com-c-1bmo)
+
+### 11. Why Developers Are Always Burned Out (And Probably Crying in the Shower)
+**来源**: Dev.to | **时间**: 2025-05-26 11:44
+**摘要**: “I don’t always burn out, but when I do, it’s because I stared at the same semicolon for 6 hours wondering why my app won’t build.”
+
+If you've ever seen a developer in the wild—dark circles under the eyes, a hoodie pulled tight, sipping cold coffee that was hot 8 hours ago—they probably looked like 
+**原文**: [查看详情](https://dev.to/pranta/why-developers-are-always-burned-out-and-probably-crying-in-the-shower-m4c)
+
+### 12. Enabling Developers To Ship Cloud-Native Applications Faster
+**来源**: Dev.to | **时间**: 2025-05-26 11:32
+**摘要**: Moving code from a developer’s local machine to a staging or testing environment is rarely straightforward for cloud-native applications. In a typical setup, developers commit their code to a version control system. Then, a CI system builds a container image with the latest changes. Finally, a CD sy
+**原文**: [查看详情](https://dev.to/engroso/enabling-developers-to-ship-cloud-native-applications-faster-45f0)
+
+### 13. The Rise of Decentralized AI Agents: A New Era of Autonomy and Privacy
+**来源**: Dev.to | **时间**: 2025-05-26 11:32
+**摘要**: Artificial Intelligence (AI) is transforming the world at an unprecedented pace. However, traditional AI models are often controlled by centralized entities, raising concerns about data privacy, bias, and single points of failure. This is where Decentralized AI Agents come into play, offering a revo
+**原文**: [查看详情](https://dev.to/vishal_singh_8666966f9bcc/the-rise-of-decentralized-ai-agents-a-new-era-of-autonomy-and-privacy-1ipb)
+
+### 14. Building a Database from Scratch: Understanding Data Serialization
+**来源**: Dev.to | **时间**: 2025-05-26 11:30
+**摘要**: "Programs must be written for people to read, and only incidentally for machines to execute." — Harold Abelson
+Picture this: you've just created an amazing in-memory data store that works flawlessly during your program's execution. But here's the catch—every restart sends your precious data into obl
+**原文**: [查看详情](https://dev.to/devdevgo/building-a-database-from-scratch-understanding-data-serialization-3j9m)
+
+### 15. Where hyperscale hardware goes to retire: Ars visits a very big ITAD site
 **来源**: Ars Technica | **时间**: 2025-05-26 11:30
 **摘要**: Watching memory DIMMs get sorted like Wonka children inside SK TES' facility.
 **原文**: [查看详情](https://arstechnica.com/information-technology/2025/05/where-hyperscale-hardware-goes-to-retire-ars-visits-a-very-big-itad-site/)
 
-### 3. I tested the viral Roborock vacuum with a mechanical arm for a month - here's my verdict
-**来源**: ZDNet | **时间**: 2025-05-26 11:30
-**摘要**: The Roborock Saros Z70 gave me a glimpse of what the future of smart homes could look like.
-**原文**: [查看详情](https://www.zdnet.com/article/i-tested-the-viral-roborock-vacuum-with-a-mechanical-arm-for-a-month-heres-my-verdict/)
 
-### 4. This Bluetooth tracker replaced my AirTag, and it works with Android just as well
-**来源**: ZDNet | **时间**: 2025-05-26 11:00
-**摘要**: The Pebblebee Clip is the world's first finder tag that works with both Google and Apple Find My networks -- and it's on sale for Memorial Day right now.
-**原文**: [查看详情](https://www.zdnet.com/article/this-bluetooth-tracker-replaced-my-airtag-and-it-works-with-android-just-as-well/)
+## 💻 开源项目
 
-### 5. Hot Farmers, Trad Wives, and an Immigrant Reality Show: Welcome to TV’s MAGA Era
-**来源**: Wired | **时间**: 2025-05-26 11:00
-**摘要**: Against the backdrop of Trump’s anti-DEI agenda, Hollywood is seeing a resurgence in anti-woke conservative programming. Producers say reactionary politics will hurt an industry already in crisis.
-**原文**: [查看详情](https://www.wired.com/story/hot-farmers-trad-wives-and-an-immigrant-reality-show-welcome-to-tvs-maga-era/)
-
-### 6. Why Women With Type 2 Diabetes Are Diagnosed Later Than Men
-**来源**: Wired | **时间**: 2025-05-26 11:00
-**摘要**: Researchers are trying to understand more about the biological and social differences that contribute to later diabetes diagnoses and worse outcomes in women.
-**原文**: [查看详情](https://www.wired.com/story/why-women-with-type-2-diabetes-are-diagnosed-later-than-men/)
-
-### 7. 24 Best Memorial Day Mattress and Bedding Sales (2025)
-**来源**: Wired | **时间**: 2025-05-26 10:31
-**摘要**: The year's best Memorial Day mattress and bedding sales on WIRED-tested products from Avocado, Helix, Brooklinen, Buffy, and more.
-**原文**: [查看详情](https://www.wired.com/story/best-memorial-day-mattress-sales-2025-3/)
-
-### 8. A Starter Guide to Protecting Your Data From Hackers and Corporations
-**来源**: Wired | **时间**: 2025-05-26 10:30
-**摘要**: Hackers. AI data scrapes. Government surveillance. Thinking about where to start when it comes to protecting your online privacy can be overwhelming. Here’s a simple guide for you—and anyone who claims they have nothing to hide.
-**原文**: [查看详情](https://www.wired.com/story/guide-protect-data-from-hackers-corporations/)
-
-### 9. 39 Best Memorial Day Sales on Our Favorite Gear (2025)
-**来源**: Wired | **时间**: 2025-05-26 10:02
-**摘要**: Save on bedding, meal kits, speakers, and more this Memorial Day weekend.
-**原文**: [查看详情](https://www.wired.com/story/best-memorial-day-sales-2025-2/)
-
-### 10. I wore Google's XR glasses, and they already beat my Ray-Ban Meta in 3 ways
-**来源**: ZDNet | **时间**: 2025-05-26 10:00
-**摘要**: Five minutes spent with Google's XR glasses framework showed me the next stage of smart wearables.
-**原文**: [查看详情](https://www.zdnet.com/article/i-wore-googles-xr-glasses-and-they-already-beat-my-ray-ban-meta-in-3-ways/)
-
-### 11. Failing well and 3 other ways AI can help you solve your big business problems
-**来源**: ZDNet | **时间**: 2025-05-26 10:00
-**摘要**: Here's how to ensure your organization is innovating in the right places.
-**原文**: [查看详情](https://www.zdnet.com/article/failing-well-and-3-other-ways-ai-can-help-you-solve-your-big-business-problems/)
-
-### 12. Car HUDs Are Bad. Jaguar Land Rover Is Testing Tech to Change That
-**来源**: Wired | **时间**: 2025-05-26 10:00
-**摘要**: With $5.3 million in funding and Meta’s former AR boss on its team, AllFocal Optics is looking to revolutionize the screens in car heads-up displays—and it's coming for smart glasses too.
-**原文**: [查看详情](https://www.wired.com/story/car-huds-are-bad-jaguar-land-rover-is-testing-tech-to-change-that/)
-
-### 13. Venta AI (YC S23) Is Hiring a Founding Full Stack Engineer in Amsterdam
-**来源**: Hacker News | **时间**: 2025-05-26 09:31
-**摘要**: Article URL: https://www.ycombinator.com/companies/venta-ai/jobs/K8m4p6z-founding-full-stack-engineer
-Comments URL: https://news.ycombinator.com/item?id=44095608
-Points: 0
-# Comments: 0
-**原文**: [查看详情](https://www.ycombinator.com/companies/venta-ai/jobs/K8m4p6z-founding-full-stack-engineer)
-
-### 14. The Milky Way Has a Mysterious ‘Broken Bone’
-**来源**: Wired | **时间**: 2025-05-26 09:00
-**摘要**: Galactic bones, filaments of radio-wave-emitting particles, run through our galaxy, and one of them has a fracture. New analysis suggests collision with a neutron star may have caused it.
-**原文**: [查看详情](https://www.wired.com/story/the-milky-way-has-a-mysterious-broken-bone-nasa/)
-
-### 15. The truth about soft plastic recycling points
-**来源**: Hacker News | **时间**: 2025-05-26 08:47
-**摘要**: Article URL: https://www.everydayplastic.org/softplastic
-Comments URL: https://news.ycombinator.com/item?id=44095360
-Points: 43
-# Comments: 32
-**原文**: [查看详情](https://www.everydayplastic.org/softplastic)
-
-
-## 💻 技术社区
-
-- **[Lieferando.de has captured 5.7% of restaurant related domain names](https://mondaybits.com/lieferando-captured-6-percent-of-restaurant-related-domain-names/)** - *Hacker News*
-- **[Show HN: A minimalist web timer for focus and time tracking](https://iamlockedin.com/)** - *Hacker News*
-- **[GitHub issues is almost the best notebook in the world](https://simonwillison.net/2025/May/26/notes/)** - *Hacker News*
-- **[Bagel: Open-source unified multimodal model](https://bagel-ai.org/)** - *Hacker News*
-- **[Google shared my phone number](https://danq.me/2025/05/21/google-shared-my-phone-number/)** - *Hacker News*
-- **[Jjui – A Nice TUI for Jujutsu](https://github.com/idursun/jjui)** - *Hacker News*
-- **[Ten years of JSON Web Token and preparing for the future](https://self-issued.info/?p=2708)** - *Hacker News*
+- **[Creating an AI Assistant for Technical Documentation – Part 2.1: Introduction to the Crawler](https://dev.to/gutkoski/creating-an-ai-assistant-for-technical-documentation-part-21-introduction-to-the-crawler-4p51)** - *Dev.to*
+- **[🚀 Exploring the Future: Where AI Meets Web3](https://dev.to/fahadabid545/exploring-the-future-where-ai-meets-web3-4091)** - *Dev.to*
+- **[🚀 Streamline Secure, Self‑Service Developer Operations with AWS SSM Automation Runbooks 🎉](https://dev.to/gabrielkoo/streamline-secure-self-service-developer-operations-with-aws-ssm-automation-runbooks-ne5)** - *Dev.to*
 
 ## 💻 企业技术
 
-- **[I recommend this cordless stick vacuum over my Dyson - and it's on sale](https://www.zdnet.com/article/i-recommend-this-cordless-stick-vacuum-over-my-dyson-and-its-on-sale/)** - *ZDNet*
-- **[I tested a smart cooler and can never go back to toting ice (especially for $100 off)](https://www.zdnet.com/article/i-tested-a-smart-cooler-and-can-never-go-back-to-toting-ice-especially-for-100-off/)** - *ZDNet*
-- **[This wireless portable speaker delivers amazingly smooth sound with little distortion](https://www.zdnet.com/article/this-wireless-portable-speaker-delivers-amazingly-smooth-sound-with-little-distortion/)** - *ZDNet*
-- **[This ultrathin LG laptop is 40% off, and comes with a free 27-inch smart monitor](https://www.zdnet.com/article/this-ultrathin-lg-laptop-is-40-off-and-comes-with-a-free-27-inch-smart-monitor/)** - *ZDNet*
-- **[I'm an audio expert and these are the Memorial Day headphone deals I'd recommend to my friends and family](https://www.zdnet.com/article/im-an-audio-expert-and-these-are-the-memorial-day-headphone-deals-id-recommend-to-my-friends-and-family/)** - *ZDNet*
-- **[I'm a health tech expert and these are the Memorial Day sales fitness enthusiasts should pick up](https://www.zdnet.com/article/im-a-health-tech-expert-and-these-are-the-memorial-day-sales-fitness-enthusiasts-should-pick-up/)** - *ZDNet*
+- **[I tested the viral Roborock vacuum with a mechanical arm for a month - here's my verdict](https://www.zdnet.com/article/i-tested-the-viral-roborock-vacuum-with-a-mechanical-arm-for-a-month-heres-my-verdict/)** - *ZDNet*
+- **[This Bluetooth tracker replaced my AirTag, and it works with Android just as well](https://www.zdnet.com/article/this-bluetooth-tracker-replaced-my-airtag-and-it-works-with-android-just-as-well/)** - *ZDNet*
+
+## 💻 Mobile
+
+- **[The Samsung Galaxy S25 Edge probably isn't for you, but that's okay](https://www.androidpolice.com/samsung-galaxy-s25-edge-dont-buy/)** - *Android Police*
+- **[Wrapping up Google I/O 2025 and the Android Police podcast](https://www.androidpolice.com/the-last-android-police-podcast/)** - *Android Police*
 
 ## 💻 科技新闻
 
-- **[Tesla opened Cybertruck trade-ins, and the numbers aren’t pretty](https://techcrunch.com/2025/05/25/tesla-opened-cybertruck-trade-ins-and-the-numbers-arent-pretty/)** - *TechCrunch*
-- **[The oldest Fire TV devices are losing Netflix support soon](https://www.theverge.com/news/674165/amazon-1st-generation-fire-tv-devices-losing-netflix-support)** - *The Verge*
+- **[Polaroid Flip Review: I Adore Its Vintage Vibes, but Not Its Vintage Heft](https://gizmodo.com/polaroid-flip-review-i-adore-its-vintage-vibes-but-not-its-vintage-heft-2000606242)** - *Gizmodo*
+- **[Hot Farmers, Trad Wives, and an Immigrant Reality Show: Welcome to TV’s MAGA Era](https://www.wired.com/story/hot-farmers-trad-wives-and-an-immigrant-reality-show-welcome-to-tvs-maga-era/)** - *Wired*
+- **[Why Women With Type 2 Diabetes Are Diagnosed Later Than Men](https://www.wired.com/story/why-women-with-type-2-diabetes-are-diagnosed-later-than-men/)** - *Wired*
+- **[24 Best Memorial Day Mattress and Bedding Sales (2025)](https://www.wired.com/story/best-memorial-day-mattress-sales-2025-3/)** - *Wired*
+- **[A Starter Guide to Protecting Your Data From Hackers and Corporations](https://www.wired.com/story/guide-protect-data-from-hackers-corporations/)** - *Wired*
+- **[39 Best Memorial Day Sales on Our Favorite Gear (2025)](https://www.wired.com/story/best-memorial-day-sales-2025-2/)** - *Wired*
+- **[Deadly Kentucky Tornadoes Ignite Fears Over U.S. Weather Warning Systems](https://gizmodo.com/deadly-kentucky-tornadoes-ignite-fears-over-u-s-weather-warning-systems-2000606539)** - *Gizmodo*
+
+## 💻 Data Science
+
+- **[12 Best GitHub Repositories to Master LLMs](https://www.analyticsvidhya.com/blog/2025/05/llm-github-repositories/)** - *Analytics Vidhya*
 
 ---
 *由科技资讯聚合系统 v3.0 于 2025-05-26 自动生成*

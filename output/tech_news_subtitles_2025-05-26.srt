@@ -8,96 +8,92 @@
 
 3
 00:00:09,266 --> 00:00:15,266
-第1条新闻：What Is Matter。We Explain the Smart Home Standard (2025).
+第1条新闻：GoPros Limited Edition HERO 13 Action Cam Is at Its Lowest Price Ever for
 
 4
-00:00:15,766 --> 00:00:21,766
-据Wired报道，This open source protocol ensures your devices play nicely。Matter 1.4.
+00:00:15,766 --> 00:00:20,033
+Memorial Days Limited-Time Sale。
 
 5
-00:00:22,266 --> 00:00:27,866
-1 makes setup easier with QR codes or NFC.
+00:00:20,533 --> 00:00:26,533
+据Gizmodo报道，Take this camera wherever you go and save big while sharing your
 
 6
-00:00:28,366 --> 00:00:34,366
-第2条新闻：Where hyperscale hardware goes to retire: Ars visits a very big ITAD site。
+00:00:27,033 --> 00:00:31,033
+exploits with the whole world。
 
 7
-00:00:34,866 --> 00:00:40,866
-据Ars Technica报道，Watching memory DIMMs get sorted like Wonka children inside SK
+00:00:31,533 --> 00:00:37,533
+第2条新闻：Sam Altman and Jony Ive Will Kill AI Gadgets Long Before They Kill the
 
 8
-00:00:41,366 --> 00:00:43,366
-TES' facility。
+00:00:38,033 --> 00:00:40,033
+iPhone。
 
 9
-00:00:43,866 --> 00:00:49,866
-第3条新闻：I tested the viral Roborock vacuum with a mechanical arm for a month -
+00:00:40,533 --> 00:00:46,533
+据Gizmodo报道，There's a lot more at stake for AI hardware than there is phones。
 
 10
-00:00:50,366 --> 00:00:52,766
-here's my verdict。
+00:00:47,033 --> 00:00:53,033
+第3条新闻：10 YouTube Channels Every Aspiring Data Scientist Should Follow in 2025。
 
 11
-00:00:53,266 --> 00:00:59,266
-据ZDNet报道，The Roborock Saros Z70 gave me a glimpse of what the future of smart
+00:00:53,533 --> 00:00:59,533
+据KDnuggets报道，Want to be a data scientist in 2025。
 
 12
-00:00:59,766 --> 00:01:02,700
-homes could look like。
+00:01:00,033 --> 00:01:06,033
+These 10 YouTube channels teach important skills, from Python basics to advanced
 
 13
-00:01:03,200 --> 00:01:09,200
-第4条新闻：This Bluetooth tracker replaced my AirTag, and it works with Android just
+00:01:06,533 --> 00:01:08,800
+machine learning.
 
 14
-00:01:09,700 --> 00:01:11,700
-as well。
+00:01:09,300 --> 00:01:15,300
+第4条新闻：What Is Matter。We Explain the Smart Home Standard (2025).
 
 15
-00:01:12,200 --> 00:01:18,200
-据ZDNet报道，The Pebblebee Clip is the world's first finder tag that works with both
+00:01:15,800 --> 00:01:21,800
+据Wired报道，This open source protocol ensures your devices play nicely。Matter 1.4.
 
 16
-00:01:18,700 --> 00:01:24,700
-Google and Apple Find My networks -- and it's on sale for Memorial Day right n。
+00:01:22,300 --> 00:01:27,900
+1 makes setup easier with QR codes or NFC.
 
 17
-00:01:25,200 --> 00:01:31,200
-第5条新闻：Hot Farmers, Trad Wives, and an Immigrant Reality Show: Welcome to TVs
+00:01:28,400 --> 00:01:34,400
+第5条新闻：Understanding PDF。js Layers and How to Use them in React.js.据Dev。
 
 18
-00:01:31,700 --> 00:01:33,700
-MAGA Era。
+00:01:34,900 --> 00:01:40,900
+to报道，PDF files are everywhere but working with PDFs in a React。
 
 19
-00:01:34,200 --> 00:01:40,200
-据Wired报道，Against the backdrop of Trumps anti-DEI agenda, Hollywood is seeing a
+00:01:41,400 --> 00:01:45,400
+js project can be frustrating.
 
 20
-00:01:40,700 --> 00:01:46,700
-resurgence in anti-woke conservative programming。
+00:01:45,900 --> 00:01:51,900
+You might run into clunky plugins, awkward iframes, or glitch.
 
 21
-00:01:47,200 --> 00:01:51,333
-Producers say reactionary poli.
-
-22
-00:01:51,833 --> 00:01:53,833
+00:01:52,400 --> 00:01:54,400
 接下来是今日科技快讯。
 
+22
+00:01:54,900 --> 00:02:00,900
+快讯1：Stop Repeating Modal Logic! Build a Reusable useModal Hook。
+
 23
-00:01:54,333 --> 00:02:00,333
-快讯1：Why Women With Type 2 Diabetes Are Diagnosed Later Than Men。
+00:02:01,400 --> 00:02:07,400
+快讯2：How to Watch the French Open 2025 Live on a Free Channel。
 
 24
-00:02:00,833 --> 00:02:06,833
-快讯2：24 Best Memorial Day Mattress and Bedding Sales (2025)。
+00:02:07,900 --> 00:02:11,100
+快讯3：What is ATL Server?。
 
 25
-00:02:07,333 --> 00:02:13,333
-快讯3：A Starter Guide to Protecting Your Data From Hackers and Corporations。
-
-26
-00:02:13,833 --> 00:02:18,233
+00:02:11,600 --> 00:02:16,000
 以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。

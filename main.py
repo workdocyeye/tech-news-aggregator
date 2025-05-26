@@ -169,7 +169,7 @@ class TechNewsAggregator:
         # 按时间排序
         unique_news.sort(key=lambda x: x.get('published_time') or datetime.min, reverse=True)
         
-        return unique_news[:30]  # 只保留最新的30条
+        return unique_news  # 保留全部新闻，不做数量限制
     
     def _generate_reports(self, news_data: List[Dict]):
         """生成三个版本的报告"""
@@ -222,8 +222,8 @@ class TechNewsAggregator:
 
 """
         
-        # 添加前15条重点新闻
-        for i, item in enumerate(news_data[:15], 1):
+        # 添加前20条重点新闻
+        for i, item in enumerate(news_data[:20], 1):
             title = item.get('title', 'No Title')
             summary = item.get('summary', 'No summary available')
             source = item.get('source', 'Unknown')
@@ -239,7 +239,7 @@ class TechNewsAggregator:
         
         # 按分类添加其他新闻
         categories = {}
-        for item in news_data[15:]:
+        for item in news_data[20:]:
             category = item.get('category', 'Other')
             if category not in categories:
                 categories[category] = []
@@ -248,7 +248,7 @@ class TechNewsAggregator:
         for category, items in categories.items():
             if items:
                 content += f"\n## 💻 {category}\n\n"
-                for item in items[:8]:  # 每个分类最多8条
+                for item in items[:15]:  # 每个分类增加到15条
                     title = item.get('title', 'No Title')
                     url = item.get('url', '#')
                     source = item.get('source', 'Unknown')
@@ -278,8 +278,8 @@ class TechNewsAggregator:
 
 """
         
-        # 添加前15条重点新闻（翻译版本）
-        for i, item in enumerate(news_data[:15], 1):
+        # 添加前20条重点新闻（翻译版本）
+        for i, item in enumerate(news_data[:20], 1):
             title = item.get('title', 'No Title')
             summary = item.get('summary', 'No summary available')
             source = item.get('source', 'Unknown')
@@ -307,7 +307,7 @@ class TechNewsAggregator:
         
         # 按分类添加其他新闻
         categories = {}
-        for item in news_data[15:]:
+        for item in news_data[20:]:
             category = item.get('category', 'Other')
             if category not in categories:
                 categories[category] = []
@@ -320,14 +320,22 @@ class TechNewsAggregator:
             'Open Source': '开源项目',
             'Tech Community': '技术社区',
             'Startups': '创业资讯',
-            'Enterprise Tech': '企业技术'
+            'Enterprise Tech': '企业技术',
+            'Mobile': '移动应用',
+            'Security': '网络安全',
+            'Web Dev': 'Web开发',
+            'Cloud': '云计算',
+            'Data Science': '数据科学',
+            'Gaming Tech': '游戏技术',
+            'AI/ML': 'AI/机器学习',
+            'Silicon Valley': '硅谷动态'
         }
         
         for category, items in categories.items():
             if items:
                 category_cn = category_map.get(category, category)
                 content += f"\n## 💻 {category_cn}\n\n"
-                for item in items[:8]:  # 每个分类最多8条
+                for item in items[:15]:  # 每个分类增加到15条
                     title = item.get('title', 'No Title')
                     url = item.get('url', '#')
                     source = item.get('source', 'Unknown')
