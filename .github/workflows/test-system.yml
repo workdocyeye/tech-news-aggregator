@@ -1,0 +1,53 @@
+name: 🧪 Test News System
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_sources:
+        description: '测试RSS源数量'
+        required: false
+        default: '3'
+
+jobs:
+  test-collection:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout
+      uses: actions/checkout@v4
+    
+    - name: 🐍 Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: 📦 Install Dependencies
+      run: |
+        pip install -r requirements.txt
+    
+    - name: 🧪 Test RSS Collection
+      run: |
+        echo "测试RSS收集功能..."
+        python -c "
+        from main import TechNewsAggregator
+        aggregator = TechNewsAggregator()
+        # 只测试前3个源
+        aggregator.rss_sources = aggregator.rss_sources[:3]
+        news = aggregator._collect_rss_data()
+        print(f'测试完成，收集到 {len(news)} 条新闻')
+        "
+    
+    - name: 🧪 Test Report Generation
+      env:
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      run: |
+        echo "测试报告生成功能..."
+        python -c "
+        from report_generator import ReportGenerator
+        generator = ReportGenerator(enable_translation=False)
+        test_data = [{'title': 'Test News', 'summary': 'Test summary', 'url': 'http://test.com', 'source': 'Test', 'time': '2024-01-01'}]
+        versions = generator.generate_all_versions(test_data)
+        print('报告生成测试完成')
+        print(f'英文版长度: {len(versions[\"english\"])}')
+        print(f'播客版长度: {len(versions[\"podcast\"])}')
+        " 
