@@ -80,7 +80,7 @@ jobs:
     
     # 8. 上传报告作为Artifacts
     - name: 📤 Upload Reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: daily-reports-${{ github.run_number }}
         path: |
