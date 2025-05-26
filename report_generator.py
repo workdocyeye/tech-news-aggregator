@@ -1,81 +1,128 @@
-import json
+#!/usr/bin/env python3
+"""
+多版本报告生成器 v2.1
+生成英文版、中英混合版和SRT字幕版本
+"""
+
+from typing import List, Dict
 from datetime import datetime
-from typing import Dict, List, Any
-from smart_translator import SmartTranslator
+import os
+
+# 导入智能翻译器和SRT生成器
+try:
+    from smart_translator import SmartTranslator
+except ImportError:
+    SmartTranslator = None
+
+try:
+    from srt_generator import SRTGenerator
+except ImportError:
+    SRTGenerator = None
 
 class ReportGenerator:
     """多版本报告生成器"""
     
     def __init__(self, enable_translation: bool = True):
-        self.translator = SmartTranslator() if enable_translation else None
-        self.enable_translation = enable_translation
+        self.enable_translation = enable_translation and SmartTranslator is not None
+        
+        # 初始化翻译器
+        if self.enable_translation:
+            try:
+                self.translator = SmartTranslator()
+                print("✅ 智能翻译器已启用")
+            except Exception as e:
+                print(f"⚠️ 翻译器初始化失败: {e}")
+                self.enable_translation = False
+                self.translator = None
+        else:
+            self.translator = None
+            print("📝 翻译功能已禁用，将生成英文版本")
+        
+        # 初始化SRT生成器
+        if SRTGenerator:
+            self.srt_generator = SRTGenerator()
+            print("✅ SRT字幕生成器已启用")
+        else:
+            self.srt_generator = None
+            print("⚠️ SRT生成器不可用")
     
     def generate_all_versions(self, news_data: List[Dict]) -> Dict[str, str]:
         """生成所有版本的报告"""
+        print(f"📝 开始生成多版本报告，共 {len(news_data)} 条新闻")
         
-        # 处理和分类新闻数据
+        # 处理新闻数据
         processed_data = self._process_news_data(news_data)
         
-        # 生成三个版本
-        versions = {
-            'english': self._generate_english_version(processed_data),
-            'bilingual': self._generate_bilingual_version(processed_data),
-            'podcast': self._generate_podcast_version(processed_data)
-        }
+        versions = {}
         
+        # 1. 生成英文版
+        print("📄 生成英文原版...")
+        versions['english'] = self._generate_english_version(processed_data)
+        
+        # 2. 生成中英混合版
+        print("🌏 生成中英混合版...")
+        versions['bilingual'] = self._generate_bilingual_version(processed_data)
+        
+        # 3. 生成SRT字幕版（替代播客版）
+        print("🎬 生成SRT字幕版...")
+        if self.srt_generator:
+            versions['srt'] = self.srt_generator.generate_srt_from_news(news_data)
+        else:
+            versions['srt'] = self._generate_fallback_srt(processed_data)
+        
+        print("✅ 所有版本生成完成")
         return versions
     
     def _process_news_data(self, news_data: List[Dict]) -> Dict:
-        """处理和分类新闻数据"""
+        """处理新闻数据"""
+        # 按时间排序
+        sorted_news = sorted(news_data, key=lambda x: x.get('time', ''), reverse=True)
         
-        # 按分类整理新闻
-        categories = {
-            'AI/ML': [],
-            'Open Source': [],
-            'Startups': [],
-            'Security': [],
-            'Mobile': [],
-            'Web Dev': [],
-            'Other': []
-        }
+        # 选择前15条作为重点新闻
+        top_stories = sorted_news[:15]
         
+        # 分类统计
+        categories = {}
         for item in news_data:
             category = self._categorize_news(item)
+            if category not in categories:
+                categories[category] = []
             categories[category].append(item)
         
-        # 统计信息
         stats = {
+            'date': datetime.now().strftime('%Y-%m-%d'),
             'total': len(news_data),
-            'by_category': {k: len(v) for k, v in categories.items() if v},
-            'date': datetime.now().strftime('%Y-%m-%d')
+            'by_category': {cat: len(items) for cat, items in categories.items()}
         }
         
         return {
             'stats': stats,
-            'categories': categories,
-            'top_stories': news_data[:10]  # 前10条作为重点新闻
+            'top_stories': top_stories,
+            'categories': categories
         }
     
     def _categorize_news(self, item: Dict) -> str:
         """新闻分类"""
         title = item.get('title', '').lower()
-        content = item.get('summary', '').lower()
-        text = f"{title} {content}"
+        summary = item.get('summary', '').lower()
+        text = f"{title} {summary}"
         
-        if any(keyword in text for keyword in ['ai', 'artificial intelligence', 'machine learning', 'gpt', 'llm']):
+        if any(keyword in text for keyword in ['ai', 'artificial intelligence', 'machine learning', 'gpt', 'llm', 'neural']):
             return 'AI/ML'
-        elif any(keyword in text for keyword in ['open source', 'github', 'repository']):
+        elif any(keyword in text for keyword in ['github', 'open source', 'repository', 'git']):
             return 'Open Source'
-        elif any(keyword in text for keyword in ['startup', 'funding', 'investment', 'ipo']):
+        elif any(keyword in text for keyword in ['startup', 'funding', 'investment', 'ipo', 'venture']):
             return 'Startups'
-        elif any(keyword in text for keyword in ['security', 'vulnerability', 'breach', 'hack']):
+        elif any(keyword in text for keyword in ['security', 'vulnerability', 'breach', 'hack', 'cyber']):
             return 'Security'
-        elif any(keyword in text for keyword in ['mobile', 'ios', 'android', 'app']):
+        elif any(keyword in text for keyword in ['mobile', 'ios', 'android', 'app', 'smartphone']):
             return 'Mobile'
-        elif any(keyword in text for keyword in ['web', 'javascript', 'react', 'frontend']):
+        elif any(keyword in text for keyword in ['web', 'javascript', 'react', 'frontend', 'css']):
             return 'Web Dev'
+        elif any(keyword in text for keyword in ['cloud', 'aws', 'azure', 'google cloud', 'kubernetes']):
+            return 'Cloud'
         else:
-            return 'Other'
+            return 'Tech News'
     
     def _generate_english_version(self, data: Dict) -> str:
         """生成英文原版"""
@@ -86,6 +133,8 @@ class ReportGenerator:
 
 ## 📊 Today's Overview
 - **Total Articles**: {stats['total']}
+- **Sources**: Multiple premium tech sources
+- **Categories**: {len(stats['by_category'])} different topics
 """
         
         # 添加分类统计
@@ -96,20 +145,37 @@ class ReportGenerator:
         
         # 添加重点新闻
         for i, item in enumerate(data['top_stories'], 1):
-            content += f"""### {i}. {item.get('title', 'No Title')}
-**Source**: {item.get('source', 'Unknown')} | **Time**: {item.get('time', 'Unknown')}
-**Summary**: {item.get('summary', 'No summary available')}
-**Link**: [{item.get('title', 'Read More')}]({item.get('url', '#')})
+            title = item.get('title', 'No Title')
+            summary = item.get('summary', 'No summary available')
+            source = item.get('source', 'Unknown')
+            time_str = item.get('time', 'Unknown')
+            url = item.get('url', '#')
+            
+            content += f"""### {i}. {title}
+**Source**: {source} | **Time**: {time_str}
+**Summary**: {summary}
+**Link**: [Read More]({url})
 
 """
         
         # 按分类添加其他新闻
         for category, items in categories.items():
-            if items and category != 'Other':
+            if items and category != 'Other' and len(items) > 0:
                 content += f"\n## 💻 {category}\n\n"
-                for item in items[:5]:  # 每个分类最多5条
-                    content += f"- **[{item.get('title', 'No Title')}]({item.get('url', '#')})**\n"
-                    content += f"  {item.get('summary', 'No summary')[:100]}...\n\n"
+                for item in items[:8]:  # 每个分类最多8条
+                    title = item.get('title', 'No Title')
+                    url = item.get('url', '#')
+                    summary = item.get('summary', 'No summary')
+                    source = item.get('source', 'Unknown')
+                    
+                    content += f"- **[{title}]({url})**\n"
+                    content += f"  *{source}* - {summary[:120]}{'...' if len(summary) > 120 else ''}\n\n"
+        
+        content += f"""
+---
+*Generated on {stats['date']} by Tech News Aggregator v2.1*
+*Total sources processed: {stats['total']} articles*
+"""
         
         return content
     
@@ -121,12 +187,17 @@ class ReportGenerator:
 
 ## 📊 今日概览 (Today's Overview)
 - **总计资讯**: {stats['total']}条 (Total: {stats['total']} articles)
+- **信息源**: 多个优质科技媒体 (Multiple premium tech sources)
+- **分类数量**: {len(stats['by_category'])}个主题 (Categories: {len(stats['by_category'])} topics)
 """
         
         # 添加分类统计
         for category, count in stats['by_category'].items():
             if self.enable_translation and self.translator:
-                cn_category = self.translator.translate_content(category)
+                try:
+                    cn_category = self.translator.translate_content(category)
+                except:
+                    cn_category = category
             else:
                 cn_category = category
             content += f"- **{cn_category}**: {count}条 ({category}: {count})\n"
@@ -134,108 +205,68 @@ class ReportGenerator:
         content += "\n## 🔥 今日热点 (Top Stories)\n\n"
         
         # 添加重点新闻（中英对照）
-        for i, item in enumerate(data['top_stories'], 1):
+        for i, item in enumerate(data['top_stories'][:10], 1):
             title = item.get('title', 'No Title')
             summary = item.get('summary', 'No summary available')
+            source = item.get('source', 'Unknown')
+            time_str = item.get('time', 'Unknown')
+            url = item.get('url', '#')
             
             # 翻译标题和摘要
             if self.enable_translation and self.translator:
-                cn_title = self.translator.translate_content(title)
-                cn_summary = self.translator.translate_content(summary)
+                try:
+                    cn_title = self.translator.translate_content(title)
+                    cn_summary = self.translator.translate_content(summary)
+                except Exception as e:
+                    print(f"翻译失败: {e}")
+                    cn_title = title
+                    cn_summary = summary
             else:
                 cn_title = title
                 cn_summary = summary
             
             content += f"""### {i}. {cn_title}
 **原标题**: {title}
-**来源**: {item.get('source', 'Unknown')} | **时间**: {item.get('time', 'Unknown')}
+**来源**: {source} | **时间**: {time_str}
 **摘要**: {cn_summary}
 **原文摘要**: {summary}
-**链接**: [查看详情]({item.get('url', '#')})
+**链接**: [查看详情]({url})
 
+"""
+        
+        content += f"""
+---
+*生成时间: {stats['date']} | Generated by Tech News Aggregator v2.1*
+*处理资讯总数: {stats['total']}条 | Total articles processed: {stats['total']}*
 """
         
         return content
     
-    def _generate_podcast_version(self, data: Dict) -> str:
-        """生成播客制作版"""
+    def _generate_fallback_srt(self, data: Dict) -> str:
+        """生成备用SRT格式（当SRT生成器不可用时）"""
         stats = data['stats']
-        top_stories = data['top_stories']
         
-        # 处理没有新闻的情况
-        if not top_stories:
-            return f"""# 🎙️ 播客脚本素材 - {stats['date']}
+        return f"""1
+00:00:00,000 --> 00:00:05,000
+大家好，欢迎收听今日科技播客。
 
-## ⚠️ 今日无新闻数据
-今天暂时没有收集到新的科技资讯，请稍后再试。
+2
+00:00:05,500 --> 00:00:10,000
+今天是{stats['date']}，为您带来{stats['total']}条科技资讯。
 
-## 📋 备用开场白
-"大家好，欢迎收听今日科技播客。我是[主持人]，今天是{stats['date']}。今天我们暂时没有新的资讯更新，但我们会继续为大家关注科技动态。"
-"""
-        
-        content = f"""# 🎙️ 播客脚本素材 - {stats['date']}
+3
+00:00:10,500 --> 00:00:15,000
+由于技术原因，详细字幕暂时无法生成。
 
-## 🎬 节目概览
-**建议时长**: 15-20分钟
-**主要话题**: {min(3, len(top_stories))}个
-**快讯数量**: {min(5, max(0, stats['total'] - 3))}条
-**深度讨论**: 2个话题
+4
+00:00:15,500 --> 00:00:20,000
+请查看英文版和中英混合版获取完整内容。
 
-## 📋 开场白素材
-"大家好，欢迎收听今日科技播客。我是[主持人]，今天是{stats['date']}。今天我们为大家带来{stats['total']}条最新科技资讯，其中包括{top_stories[0].get('title', '重要新闻')[:30]}...等重磅消息。"
-
-## 🔥 主要话题讨论
+5
+00:00:20,500 --> 00:00:25,000
+感谢收听，我们明天再见。
 
 """
-        
-        # 生成主要话题
-        for i, story in enumerate(top_stories[:3], 1):
-            title = story.get('title', 'No Title')
-            summary = story.get('summary', 'No summary')
-            
-            content += f"""### 话题{i}：{title}（建议讨论时间：5-7分钟）
-
-**核心要点**：
-- {summary[:100]}...
-- 对行业的潜在影响
-- 技术发展趋势分析
-
-**讨论角度**：
-- 技术分析：深入解读技术细节
-- 商业影响：对市场和用户的意义
-- 未来展望：可能的发展方向
-
-**引用来源**：{story.get('source', 'Unknown')}
-**详细链接**：{story.get('url', '#')}
-
-"""
-        
-        # 生成快讯部分
-        content += "## ⚡ 科技快讯（建议时间：3-4分钟）\n\n"
-        
-        quick_news = top_stories[3:8]  # 第4-8条作为快讯
-        for i, news in enumerate(quick_news, 1):
-            content += f"""### 快讯{i}：{news.get('title', 'No Title')[:50]}...
-"{news.get('summary', 'No summary')[:150]}..."
-
-"""
-        
-        # 结束语
-        content += f"""## 🎯 结束语素材
-"以上就是今天的科技资讯。从{top_stories[0].get('title', '主要新闻')[:30]}...到{top_stories[1].get('title', '其他新闻')[:30]}...，我们可以看到科技行业正在快速发展。我们明天同一时间再见，感谢收听！"
-
-## 📊 补充数据和引用
-- 今日资讯总数：{stats['total']}条
-- 主要来源：{', '.join(set(item.get('source', 'Unknown') for item in top_stories[:5]))}
-- 热门话题：{', '.join(stats['by_category'].keys())}
-
-## 🔗 相关链接（供深度了解）
-"""
-        
-        for i, story in enumerate(top_stories[:5], 1):
-            content += f"{i}. [{story.get('title', 'No Title')}]({story.get('url', '#')})\n"
-        
-        return content
 
 # 测试代码
 if __name__ == "__main__":
@@ -262,5 +293,5 @@ if __name__ == "__main__":
     
     print("=== 英文版 ===")
     print(versions['english'][:500])
-    print("\n=== 播客版 ===")
-    print(versions['podcast'][:500]) 
+    print("\n=== SRT字幕版 ===")
+    print(versions['srt'][:500]) 

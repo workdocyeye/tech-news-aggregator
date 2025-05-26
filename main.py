@@ -2,6 +2,7 @@
 """
 科技资讯聚合系统 v2.1 - GitHub Actions优化版
 专为GitHub Actions环境优化，提供更好的稳定性和错误处理
+支持60+信息源，生成SRT字幕文件
 """
 
 import os
@@ -14,6 +15,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import List, Dict, Optional
 import traceback
+import re
 
 # 导入自定义模块
 from premium_sources import GitHubOptimizedSources
@@ -22,10 +24,10 @@ from report_generator import ReportGenerator
 from notification_system import NotificationSystem
 
 class GitHubOptimizedAggregator:
-    """GitHub Actions优化版科技资讯聚合器"""
+    """GitHub Actions优化版科技资讯聚合器 v2.1"""
     
     def __init__(self):
-        print("🚀 初始化GitHub Actions优化版聚合器...")
+        print("🚀 初始化GitHub Actions优化版聚合器 v2.1...")
         
         # 初始化组件
         self.sources_manager = GitHubOptimizedSources()
@@ -37,16 +39,21 @@ class GitHubOptimizedAggregator:
         self.max_retries = 3
         self.retry_delay = 2  # 秒
         self.timeout = 30  # 秒
-        self.min_articles_threshold = 5  # 最少文章数量
+        self.min_articles_threshold = 10  # 最少文章数量（提高阈值）
+        
+        # 打印信息源统计
+        self.sources_manager.print_sources_summary()
         
         print("✅ 初始化完成")
     
     def run_daily_collection(self):
-        """运行每日收集任务 - GitHub Actions优化版"""
-        print("\n🚀 开始每日科技资讯收集 (GitHub Actions优化版)")
-        print("🎯 专注五大核心领域：GitHub、AI、创业、硅谷、科技")
+        """运行每日收集任务 - GitHub Actions优化版 v2.1"""
+        print("\n🚀 开始每日科技资讯收集 (v2.1)")
+        print("📊 信息源已扩展至60+个优质科技媒体")
+        print("🎬 新增SRT字幕文件生成功能")
+        print("🎯 专注十大核心领域：AI、GitHub、创业、硅谷、科技、开源、企业、移动、安全、Web开发")
         print("🛡️ 增强错误处理和重试机制")
-        print("=" * 60)
+        print("=" * 80)
         
         try:
             # 1. 收集RSS数据（带重试机制）
@@ -68,18 +75,24 @@ class GitHubOptimizedAggregator:
             # 3. 生成分类统计
             self._print_classification_stats(classified_data)
             
-            # 4. 生成三个版本的报告
+            # 4. 生成三个版本的报告（包含SRT字幕）
             print("📝 正在生成多版本报告...")
             versions = self.report_generator.generate_all_versions(classified_data)
             print("✅ 报告生成完成")
             
+            # 打印版本信息
+            self._print_versions_info(versions)
+            
             # 5. 发送邮件通知（带错误处理）
             print("📧 正在发送邮件通知...")
             try:
-                self.notification_system.send_daily_reports(versions)
-                print("✅ 邮件发送成功")
+                success = self.notification_system.send_daily_reports(versions)
+                if success:
+                    print("✅ 邮件发送成功")
+                else:
+                    print("⚠️ 邮件发送失败，但系统继续运行")
             except Exception as e:
-                print(f"⚠️ 邮件发送失败: {e}")
+                print(f"⚠️ 邮件发送异常: {e}")
                 print("📧 邮件功能可能需要配置环境变量")
             
             # 6. 保存到GitHub
@@ -87,6 +100,7 @@ class GitHubOptimizedAggregator:
             
             print("🎉 每日收集任务完成！")
             print("💡 基于GitHub Actions优化的高质量信息源")
+            print("🎬 SRT字幕文件已生成，可直接用于播客制作")
             
         except Exception as e:
             print(f"❌ 任务执行失败: {e}")
@@ -294,23 +308,64 @@ class GitHubOptimizedAggregator:
         return unique_news
     
     def _print_classification_stats(self, classified_data: List[Dict]):
-        """打印分类统计"""
+        """打印分类统计 - 优化版"""
         if not classified_data:
             print("⚠️ 没有分类数据")
             return
         
         # 统计分类
         category_stats = {}
+        priority_stats = {}
+        reliability_stats = {}
+        
         for news in classified_data:
-            main_cat = news.get('主分类', '未分类')
+            # 分类统计
+            main_cat = news.get('主分类', news.get('category', '未分类'))
             category_stats[main_cat] = category_stats.get(main_cat, 0) + 1
+            
+            # 优先级统计
+            priority = news.get('priority', 'medium')
+            priority_stats[priority] = priority_stats.get(priority, 0) + 1
+            
+            # 可靠性统计
+            reliability = news.get('reliability', 'good')
+            reliability_stats[reliability] = reliability_stats.get(reliability, 0) + 1
         
         print("\n📊 分类统计:")
+        
+        # 分类分布
+        print("   📂 分类分布:")
+        categories = self.sources_manager.get_categories()
         for category, count in sorted(category_stats.items(), key=lambda x: x[1], reverse=True):
-            print(f"   📂 {category}: {count}条")
+            category_name = categories.get(category, category)
+            percentage = count / len(classified_data) * 100
+            print(f"      {category_name}: {count} 条 ({percentage:.1f}%)")
+        
+        # 优先级分布
+        print("   🔥 优先级分布:")
+        for priority, count in sorted(priority_stats.items(), key=lambda x: x[1], reverse=True):
+            percentage = count / len(classified_data) * 100
+            icon = "🔥" if priority == "high" else "📌" if priority == "medium" else "📝"
+            print(f"      {icon} {priority}: {count} 条 ({percentage:.1f}%)")
+    
+    def _print_versions_info(self, versions: Dict[str, str]):
+        """打印版本信息"""
+        print("📋 生成版本信息:")
+        for version_name, content in versions.items():
+            char_count = len(content)
+            line_count = content.count('\n')
+            
+            if version_name == 'english':
+                print(f"   📄 英文版: {char_count:,} 字符, {line_count} 行")
+            elif version_name == 'bilingual':
+                print(f"   🌏 中英混合版: {char_count:,} 字符, {line_count} 行")
+            elif version_name == 'srt':
+                # 统计SRT字幕条数
+                srt_count = content.count('\n\n') if content else 0
+                print(f"   🎬 SRT字幕版: {srt_count} 条字幕, {char_count:,} 字符")
     
     def _save_for_github(self, versions: Dict[str, str], classified_data: List[Dict]):
-        """保存文件供GitHub Actions使用"""
+        """保存文件供GitHub Actions使用 - 优化版"""
         print("💾 正在保存文件...")
         
         # 创建输出目录
@@ -319,23 +374,91 @@ class GitHubOptimizedAggregator:
         
         date_str = datetime.now().strftime('%Y-%m-%d')
         
-        # 保存各版本报告
-        for version_name, content in versions.items():
-            file_path = output_dir / f"{version_name}_{date_str}.md"
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(content)
-            print(f"   💾 已保存: {file_path}")
-        
-        # 保存分类数据
-        classified_file = output_dir / f"classified_data_{date_str}.json"
-        with open(classified_file, 'w', encoding='utf-8') as f:
-            json.dump(classified_data, f, ensure_ascii=False, indent=2, default=str)
-        print(f"   💾 已保存: {classified_file}")
-        
-        # 保存最新报告（用于网页展示）
-        with open('latest_report.md', 'w', encoding='utf-8') as f:
-            f.write(versions.get('bilingual', versions.get('english', '')))
-        print(f"   💾 已保存: latest_report.md")
+        try:
+            # 保存英文版
+            if 'english' in versions:
+                english_file = output_dir / f"daily_news_english_{date_str}.md"
+                with open(english_file, 'w', encoding='utf-8') as f:
+                    f.write(versions['english'])
+                print(f"   📄 英文版: {english_file}")
+            
+            # 保存中英混合版
+            if 'bilingual' in versions:
+                bilingual_file = output_dir / f"daily_news_bilingual_{date_str}.md"
+                with open(bilingual_file, 'w', encoding='utf-8') as f:
+                    f.write(versions['bilingual'])
+                print(f"   🌏 中英混合版: {bilingual_file}")
+            
+            # 保存SRT字幕版
+            if 'srt' in versions:
+                srt_file = output_dir / f"podcast_subtitles_{date_str}.srt"
+                with open(srt_file, 'w', encoding='utf-8') as f:
+                    f.write(versions['srt'])
+                print(f"   🎬 SRT字幕版: {srt_file}")
+            
+            # 保存最新报告（用于GitHub Pages）
+            latest_file = Path("latest_report.md")
+            with open(latest_file, 'w', encoding='utf-8') as f:
+                f.write(f"""# 📰 最新科技简报 - {date_str}
+
+## 🔗 今日报告
+
+- [📄 英文原版](output/daily_news_english_{date_str}.md)
+- [🌏 中英混合版](output/daily_news_bilingual_{date_str}.md)  
+- [🎬 SRT字幕文件](output/podcast_subtitles_{date_str}.srt)
+
+## 📊 统计信息
+
+- **收集时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+- **资讯总数**: {len(classified_data)} 条
+- **信息源**: 60+ 个优质科技媒体
+- **覆盖领域**: AI、GitHub、创业、硅谷、科技、开源、企业、移动、安全、Web开发
+
+## 🎬 SRT字幕使用说明
+
+SRT字幕文件可直接导入以下视频编辑软件：
+- Adobe Premiere Pro
+- Final Cut Pro
+- DaVinci Resolve
+- Camtasia
+- OBS Studio
+
+使用方法：
+1. 录制播客音频
+2. 在视频编辑软件中导入音频和SRT文件
+3. 软件会自动同步字幕时间轴
+4. 根据需要调整字幕样式和位置
+
+---
+*由科技资讯聚合系统 v2.1 自动生成*
+""")
+            print(f"   📋 最新报告: {latest_file}")
+            
+            # 保存统计数据
+            stats_file = output_dir / f"stats_{date_str}.json"
+            stats_data = {
+                'date': date_str,
+                'total_articles': len(classified_data),
+                'generation_time': datetime.now().isoformat(),
+                'versions': {
+                    'english_chars': len(versions.get('english', '')),
+                    'bilingual_chars': len(versions.get('bilingual', '')),
+                    'srt_subtitles': versions.get('srt', '').count('\n\n') if versions.get('srt') else 0
+                },
+                'categories': {}
+            }
+            
+            # 统计分类
+            for item in classified_data:
+                category = item.get('category', item.get('主分类', 'unknown'))
+                stats_data['categories'][category] = stats_data['categories'].get(category, 0) + 1
+            
+            with open(stats_file, 'w', encoding='utf-8') as f:
+                json.dump(stats_data, f, ensure_ascii=False, indent=2)
+            print(f"   📊 统计数据: {stats_file}")
+            
+        except Exception as e:
+            print(f"   ❌ 保存文件失败: {e}")
         
         # 生成运行统计
         stats = {
@@ -386,19 +509,28 @@ class GitHubOptimizedAggregator:
 
 def main():
     """主函数"""
-    print("🌟 科技资讯聚合系统 v2.1 - GitHub Actions优化版")
+    print("🌟 科技资讯聚合系统 v2.1")
+    print("🎯 专注十大核心领域，60+优质信息源")
+    print("🎬 支持SRT字幕文件生成")
     print("=" * 60)
     
-    # 检查环境
-    print("🔍 检查运行环境...")
-    if os.getenv('GITHUB_ACTIONS'):
-        print("✅ 运行在GitHub Actions环境")
-    else:
-        print("💻 运行在本地环境")
-    
-    # 创建聚合器并运行
-    aggregator = GitHubOptimizedAggregator()
-    aggregator.run_daily_collection()
+    try:
+        aggregator = GitHubOptimizedAggregator()
+        aggregator.run_daily_collection()
+        
+        print("\n🎉 系统运行完成！")
+        print("💡 查看生成的文件:")
+        print("   - output/ 目录下的报告文件")
+        print("   - latest_report.md 最新报告索引")
+        print("   - SRT字幕文件可直接用于播客制作")
+        
+    except KeyboardInterrupt:
+        print("\n⚠️ 用户中断程序")
+        sys.exit(0)
+    except Exception as e:
+        print(f"\n❌ 程序异常退出: {e}")
+        traceback.print_exc()
+        sys.exit(1)
 
 if __name__ == "__main__":
     main() 
