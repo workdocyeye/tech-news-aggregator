@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:06,000
-大家好，欢迎收听今日科技播客。今天是2025-05-26，我为大家带来30条最新科技资讯。
+大家好，欢迎收听今日科技播客。今天是2025-05-26，我为大家带来215条最新科技资讯。
 
 2
 00:00:06,500 --> 00:00:08,766
@@ -8,92 +8,128 @@
 
 3
 00:00:09,266 --> 00:00:15,266
-第1条新闻：GoPros Limited Edition HERO 13 Action Cam Is at Its Lowest Price Ever for
+第1条新闻：Marjorie Taylor Greene picked a fight with Grok。据Dev。
 
 4
-00:00:15,766 --> 00:00:20,033
-Memorial Days Limited-Time Sale。
+00:00:15,766 --> 00:00:21,766
+to报道，Marjorie Taylor Greene picked a fight with Grok TechCrunchMarjorie Taylor
 
 5
-00:00:20,533 --> 00:00:26,533
-据Gizmodo报道，Take this camera wherever you go and save big while sharing your
+00:00:22,266 --> 00:00:28,266
+Greene picked a fight with Grok TechCrunch Elon Musk's AI Grok told Rep。
 
 6
-00:00:27,033 --> 00:00:31,033
-exploits with the whole world。
+00:00:28,766 --> 00:00:30,766
+M.
 
 7
-00:00:31,533 --> 00:00:37,533
-第2条新闻：Sam Altman and Jony Ive Will Kill AI Gadgets Long Before They Kill the
+00:00:31,266 --> 00:00:37,266
+第2条新闻：Google Veo 3 could become a real problem for content creators as
 
 8
-00:00:38,033 --> 00:00:40,033
-iPhone。
+00:00:37,766 --> 00:00:42,433
+convincing AI videos flood the web。
 
 9
-00:00:40,533 --> 00:00:46,533
-据Gizmodo报道，There's a lot more at stake for AI hardware than there is phones。
+00:00:42,933 --> 00:00:44,933
+据Dev。
 
 10
-00:00:47,033 --> 00:00:53,033
-第3条新闻：10 YouTube Channels Every Aspiring Data Scientist Should Follow in 2025。
+00:00:45,433 --> 00:00:51,433
+to报道，Google Veo 3 could become a real problem for content creators as convincing
 
 11
-00:00:53,533 --> 00:00:59,533
-据KDnuggets报道，Want to be a data scientist in 2025。
+00:00:51,933 --> 00:00:57,933
+AI videos flood the web - PC Guide Google recently unveiled Veo 3。
 
 12
-00:01:00,033 --> 00:01:06,033
-These 10 YouTube channels teach important skills, from Python basics to advanced
+00:00:58,433 --> 00:01:00,433
+The AI.
 
 13
-00:01:06,533 --> 00:01:08,800
-machine learning.
+00:01:00,933 --> 00:01:06,933
+第3条新闻：OpenAI is buying Jony Ive's AI hardware company The deal is valued at
 
 14
-00:01:09,300 --> 00:01:15,300
-第4条新闻：What Is Matter。We Explain the Smart Home Standard (2025).
+00:01:07,433 --> 00:01:09,433
+nearly 6。
 
 15
-00:01:15,800 --> 00:01:21,800
-据Wired报道，This open source protocol ensures your devices play nicely。Matter 1.4.
+00:01:09,933 --> 00:01:11,933
+5 billion.据Dev。
 
 16
-00:01:22,300 --> 00:01:27,900
-1 makes setup easier with QR codes or NFC.
+00:01:12,433 --> 00:01:18,433
+to报道，OpenAI is buying Jony Ives AI hardware company The Verge Ives company is
 
 17
-00:01:28,400 --> 00:01:34,400
-第5条新闻：Understanding PDF。js Layers and How to Use them in React.js.据Dev。
+00:01:18,933 --> 00:01:20,933
+called io。
 
 18
-00:01:34,900 --> 00:01:40,900
-to报道，PDF files are everywhere but working with PDFs in a React。
+00:01:21,433 --> 00:01:23,433
+theverge.com.
 
 19
-00:01:41,400 --> 00:01:45,400
-js project can be frustrating.
+00:01:23,933 --> 00:01:29,933
+第4条新闻：Shift Left for AI Coding Assistants: How to Enforce AppSec Early with
 
 20
-00:01:45,900 --> 00:01:51,900
-You might run into clunky plugins, awkward iframes, or glitch.
+00:01:30,433 --> 00:01:32,566
+Cursor Windsurf。
 
 21
-00:01:52,400 --> 00:01:54,400
-接下来是今日科技快讯。
+00:01:33,066 --> 00:01:35,066
+据Dev。
 
 22
-00:01:54,900 --> 00:02:00,900
-快讯1：Stop Repeating Modal Logic! Build a Reusable useModal Hook。
+00:01:35,566 --> 00:01:41,566
+to报道，AI-assisted development tools like Cursor and Windsurf are rapidly becoming
 
 23
-00:02:01,400 --> 00:02:07,400
-快讯2：How to Watch the French Open 2025 Live on a Free Channel。
+00:01:42,066 --> 00:01:47,533
+essential in modern software development。
 
 24
-00:02:07,900 --> 00:02:11,100
-快讯3：What is ATL Server?。
+00:01:48,033 --> 00:01:52,433
+These intelligent code editors b.
 
 25
-00:02:11,600 --> 00:02:16,000
+00:01:52,933 --> 00:01:58,933
+第5条新闻：GoPros Limited Edition HERO 13 Action Cam Is at Its Lowest Price Ever for
+
+26
+00:01:59,433 --> 00:02:03,700
+Memorial Days Limited-Time Sale。
+
+27
+00:02:04,200 --> 00:02:10,200
+据Gizmodo报道，Take this camera wherever you go and save big while sharing your
+
+28
+00:02:10,700 --> 00:02:14,700
+exploits with the whole world。
+
+29
+00:02:15,200 --> 00:02:17,200
+接下来是今日科技快讯。
+
+30
+00:02:17,700 --> 00:02:23,700
+快讯1：Benchmarking AI-Generated Code: Cursor vs Windsurf vs Secure Coding
+
+31
+00:02:24,200 --> 00:02:26,200
+Standards。
+
+32
+00:02:26,700 --> 00:02:32,700
+快讯2：5 Top CMS Platforms in 2025: Pagepro Picks。
+
+33
+00:02:33,200 --> 00:02:39,200
+快讯3：Seamless AI: Integrating Machine Learning Into Your Figma Files。
+
+34
+00:02:39,700 --> 00:02:44,100
 以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
