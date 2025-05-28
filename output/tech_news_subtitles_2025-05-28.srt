@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-05-28，我为大家带来403条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：What features you get with Google AI Pro and AI Ultra。
+
+4
+00:00:15,766 --> 00:00:21,766
+据9to5Google报道，At IO 2025, Google One AI Premium (and Gemini Advanced) became
+
+5
+00:00:22,266 --> 00:00:28,266
+Google AI Pro, while a higher, more expensive tier was introduced with Google AI
+
+6
+00:00:28,766 --> 00:00:30,766
+Ultra。
+
+7
+00:00:31,266 --> 00:00:37,266
+第2条新闻：Build an AI Fashion Assistant in Django - Full Tutorial (w videos)。据Dev。
+
+8
+00:00:37,766 --> 00:00:43,766
+to报道，Build an AI-Powered Fashion Assistant with Django In this tutorial, well
+
+9
+00:00:44,266 --> 00:00:50,266
+walk step-by-step through creating a stylish AI Weather-Based Fashion Assista。
+
+10
+00:00:50,766 --> 00:00:56,766
+第3条新闻：Practical Development of Real Estate and Renovation Applications Based on
+
+11
+00:00:57,266 --> 00:00:59,266
+HarmonyOS Next。
+
+12
+00:00:59,766 --> 00:01:01,766
+据Dev。
+
+13
+00:01:02,266 --> 00:01:08,266
+to报道，Practical Development of Real Estate and Renovation Applications Based on
+
+14
+00:01:08,766 --> 00:01:14,766
+HarmonyOS Next: Building a Smart Home Service Platform from Scratch 1。
+
+15
+00:01:15,266 --> 00:01:17,266
+Proje.
+
+16
+00:01:17,766 --> 00:01:23,766
+第4条新闻：Combining Multiple APIs Into a Unified Service Using Martini。据Dev。
+
+17
+00:01:24,266 --> 00:01:27,599
+to报道，Weve all been there。
+
+18
+00:01:28,099 --> 00:01:34,099
+Youre tasked with building a customer dashboard or integration that pulls data
+
+19
+00:01:34,599 --> 00:01:40,599
+from three totally different APIsone for CRM data,.
+
+20
+00:01:41,099 --> 00:01:47,099
+第5条新闻：[AWS][Build Games]I created an AWS puzzle game using Amazon Q CLI。据Dev。
+
+21
+00:01:47,599 --> 00:01:53,599
+to报道，Introduction Thank you for always reading our articles。
+
+22
+00:01:54,099 --> 00:02:00,099
+I took on the challenge of "Making a game with Amazon Q CLI" which was posted as
+
+23
+00:02:00,599 --> 00:02:02,599
+part of a Bu.
+
+24
+00:02:03,099 --> 00:02:05,099
+接下来是今日科技快讯。
+
+25
+00:02:05,599 --> 00:02:11,599
+快讯1：Practical Development of Smart Real Estate and Renovation Applications Based
+
+26
+00:02:12,099 --> 00:02:14,500
+on HarmonyOS Next。
+
+27
+00:02:15,000 --> 00:02:21,000
+快讯2：A Complete Guide to Developing Real Estate and Renovation Apps Based on
+
+28
+00:02:21,500 --> 00:02:23,500
+HarmonyOS Next。
+
+29
+00:02:24,000 --> 00:02:30,000
+快讯3：Practical Development of Lifestyle Service Applications Based on HarmonyOS
+
+30
+00:02:30,500 --> 00:02:36,233
+Next: AppGallery Connect Integration Guide。
+
+31
+00:02:36,733 --> 00:02:41,133
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
