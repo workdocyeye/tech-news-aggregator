@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-05-29，我为大家带来516条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Web Performansını İyileştirme Rehberi。据Dev。
+
+4
+00:00:15,766 --> 00:00:21,766
+to报道，Web sitelerinin performansını optimize etmek, geliştiriciler ve işletmeler
+
+5
+00:00:22,266 --> 00:00:27,600
+için her zaman kritik bir konu olmuştur。
+
+6
+00:00:28,100 --> 00:00:32,766
+Bir web sitesinin yüklenme hızı, k.
+
+7
+00:00:33,266 --> 00:00:39,266
+第2条新闻：Lightspeed backs Indian home services startup Snabbit as the next big
+
+8
+00:00:39,766 --> 00:00:41,766
+consumer trend。
+
+9
+00:00:42,266 --> 00:00:48,266
+据TechCrunch报道，Home services in India whether it is cleaning, dishwashing, or
+
+10
+00:00:48,766 --> 00:00:54,766
+laundry have traditionally been offline and informally run。
+
+11
+00:00:55,266 --> 00:00:58,733
+This has often resulted i.
+
+12
+00:00:59,233 --> 00:01:05,233
+第3条新闻：I Benchmarked 8 AI Image Compression Tools Using a 20MB File Only Two
+
+13
+00:01:05,733 --> 00:01:07,733
+Passed。
+
+14
+00:01:08,233 --> 00:01:10,233
+据Dev。
+
+15
+00:01:10,733 --> 00:01:16,733
+to报道，AI image compression tools love to promise magic: smaller file size, zero
+
+16
+00:01:17,233 --> 00:01:19,233
+quality loss。
+
+17
+00:01:19,733 --> 00:01:25,733
+Reality.Not so clean.I took a 61444096 PNG (20.3MB) generate.
+
+18
+00:01:26,233 --> 00:01:32,233
+第4条新闻：Smardex: A Step-by-Step Guide to Smarter Liquidity Provision in DeFi。据Dev。
+
+19
+00:01:32,733 --> 00:01:38,733
+to报道，An Educational Guide to Using Smardex for Safer, Smarter Liquidity
+
+20
+00:01:39,233 --> 00:01:43,766
+Provision in DeFi What Is Smardex。
+
+21
+00:01:44,266 --> 00:01:50,266
+Smardex is an advanced decentralized Automated M.
+
+22
+00:01:50,766 --> 00:01:53,966
+第5条新闻：Caso real: cuando。
+
+23
+00:01:54,466 --> 00:02:00,466
+populate() no es suficiente (y lo que aprendí integrando MongoDB con Oracle).
+
+24
+00:02:00,966 --> 00:02:06,966
+据Dev。to报道，Hace un tiempo me tocó un desafío interesante como backend developer。
+
+25
+00:02:07,466 --> 00:02:13,466
+Un cliente necesitaba extender su sistema.Era una especie de migración evolutiv.
+
+26
+00:02:13,966 --> 00:02:15,966
+接下来是今日科技快讯。
+
+27
+00:02:16,466 --> 00:02:22,466
+快讯1：Fix for Chrome Browser CORS error - stale cache。
+
+28
+00:02:22,966 --> 00:02:28,966
+快讯2：Show HN: Handover.ai  Knowledge transfer made easy。
+
+29
+00:02:29,466 --> 00:02:31,466
+快讯3：Ex.4。
+
+30
+00:02:31,966 --> 00:02:36,366
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
