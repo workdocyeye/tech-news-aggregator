@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-05-31，我为大家带来483条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Games made with Unity: May 2025 in review。
+
+4
+00:00:15,766 --> 00:00:21,766
+据Unity Blog报道，A bunch of great games made with Unity dropped in Mayacross
+
+5
+00:00:22,266 --> 00:00:26,000
+genres, budgets, and styles。
+
+6
+00:00:26,500 --> 00:00:32,500
+Heres a quick roundup of what shipped that anyone not still l.
+
+7
+00:00:33,000 --> 00:00:38,866
+第2条新闻：How to Build Agentic Rag in Rust。据Dev。
+
+8
+00:00:39,366 --> 00:00:45,366
+to报道，The Problem: RAG That Searches for Everything Traditional RAG systems have
+
+9
+00:00:45,866 --> 00:00:51,733
+a glaring issue: they search for everything。
+
+10
+00:00:52,233 --> 00:00:56,233
+User asks about pizza recipes.
+
+11
+00:00:56,733 --> 00:01:02,733
+第3条新闻：Why Every Programmer Should Embrace Failure。据Dev。
+
+12
+00:01:03,233 --> 00:01:09,233
+to报道，If theres one thing Ive learned as a programmer, its that failure isnt just
+
+13
+00:01:09,733 --> 00:01:12,933
+inevitableits essential。
+
+14
+00:01:13,433 --> 00:01:19,433
+In coding, mistakes, bugs, and errors arent signs.
+
+15
+00:01:19,933 --> 00:01:25,933
+第4条新闻：Performans İyileştirmesi: Saniyeler Kazan。据Dev。
+
+16
+00:01:26,433 --> 00:01:32,433
+to报道，Yaz tatili birçok kişi için dinlenmek, yeni yerler keşfetmek ve aile ve
+
+17
+00:01:32,933 --> 00:01:38,933
+arkadaşlarla kaliteli zaman geçirmek demektir。
+
+18
+00:01:39,433 --> 00:01:43,700
+Deniz kenarında güneşlenmek, yü.
+
+19
+00:01:44,200 --> 00:01:50,200
+第5条新闻：Top 5 Tools That Changed How I Code Forever。据Dev。
+
+20
+00:01:50,700 --> 00:01:56,700
+to报道，Over the years, Ive tried a lot of tools and software that help make coding
+
+21
+00:01:57,200 --> 00:02:01,866
+easier, faster, and more enjoyable。
+
+22
+00:02:02,366 --> 00:02:07,566
+But there are a few that truly transfo.
+
+23
+00:02:08,066 --> 00:02:10,066
+接下来是今日科技快讯。
+
+24
+00:02:10,566 --> 00:02:16,566
+快讯1：My Favorite Game Dev Moments: When Coding Meets Gaming。
+
+25
+00:02:17,066 --> 00:02:23,066
+快讯2：How OCR Engines Like Tesseract Work  From Image to Text。
+
+26
+00:02:23,566 --> 00:02:29,566
+快讯3：From Casual to Pro: My Evolution as a Gamer.。
+
+27
+00:02:30,066 --> 00:02:34,466
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
