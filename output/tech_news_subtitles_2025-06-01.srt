@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-01，我为大家带来365条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Obtenha Emojis via Linha de Comando。据Dev。
+
+4
+00:00:15,766 --> 00:00:21,766
+to报道，Um comando com autocomplete feito com C。
+
+5
+00:00:22,266 --> 00:00:28,266
+Eu o dia foi bastante tranquilo e aproveitei pra ficar inventando algumas
+
+6
+00:00:28,766 --> 00:00:30,766
+coisas.
+
+7
+00:00:31,266 --> 00:00:35,000
+Dentre algumas delas, eu en.
+
+8
+00:00:35,500 --> 00:00:40,700
+第2条新闻：Get Emojis via Command Line。据Dev。
+
+9
+00:00:41,200 --> 00:00:47,200
+to报道，A command with autocomplete made with C。
+
+10
+00:00:47,700 --> 00:00:53,700
+Today was pretty calm, so I spent some time tinkering with ideas.
+
+11
+00:00:54,200 --> 00:01:00,066
+Among them, I found a link to a bunch of em.
+
+12
+00:01:00,566 --> 00:01:06,566
+第3条新闻：Stranger Things season 5 will stream this November。
+
+13
+00:01:07,066 --> 00:01:13,066
+据The Verge报道，Stranger Things fifth and final season finally has a premiere date。
+
+14
+00:01:13,566 --> 00:01:19,566
+During its live Tudum event, Netflix announced that Stranger Things fifth season
+
+15
+00:01:20,066 --> 00:01:22,066
+w.
+
+16
+00:01:22,566 --> 00:01:28,566
+第4条新闻：A beginner's guide to the Ltx-Video-0。9.
+
+17
+00:01:29,066 --> 00:01:34,400
+7 model by Lightricks on Replicate.据Dev。
+
+18
+00:01:34,900 --> 00:01:40,900
+to报道，This is a simplified guide to an AI model called Ltx-Video-0。9.
+
+19
+00:01:41,400 --> 00:01:45,000
+7 maintained by Lightricks.
+
+20
+00:01:45,500 --> 00:01:51,500
+If you like these kinds of analysis, you should join AImode.
+
+21
+00:01:52,000 --> 00:01:58,000
+第5条新闻：Wednesday Season 2s Opening Scenes Introduce Us to Her Wild Summer。
+
+22
+00:01:58,500 --> 00:02:04,500
+据Gizmodo报道，Tim Burton's Netflix show starring Jenna Ortega drops part one August
+
+23
+00:02:05,000 --> 00:02:08,599
+6 and part two September 3。
+
+24
+00:02:09,099 --> 00:02:11,099
+接下来是今日科技快讯。
+
+25
+00:02:11,599 --> 00:02:17,599
+快讯1：Quantum Financial System vs. Traditional Banking: A Comparative Analysis。
+
+26
+00:02:18,099 --> 00:02:23,566
+快讯2：Daily Debug  Day 1: Blocks in Motion。
+
+27
+00:02:24,066 --> 00:02:30,066
+快讯3：Stranger Things Returns for One Last Time This November。
+
+28
+00:02:30,566 --> 00:02:34,966
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
