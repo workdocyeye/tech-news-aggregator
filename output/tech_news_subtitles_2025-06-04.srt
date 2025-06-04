@@ -1,0 +1,103 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-04，我为大家带来486条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Which ChatGPT Model Is Best。(As of May 2025).据Dev。
+
+4
+00:00:15,766 --> 00:00:21,766
+to报道，ChatGPT has seen rapid evolution in 2024 and 2025, with multiple model
+
+5
+00:00:22,266 --> 00:00:28,266
+iterations optimized for reasoning, multimodal inputs, and specialized tasks。
+
+6
+00:00:28,766 --> 00:00:30,766
+A.
+
+7
+00:00:31,266 --> 00:00:37,266
+第2条新闻：Functional tabs with only CSS (No JavaScript)。据Dev。
+
+8
+00:00:37,766 --> 00:00:43,766
+to报道，This article demonstrates how to create functional tabs using only CSS,
+
+9
+00:00:44,266 --> 00:00:47,333
+without any JavaScript。
+
+10
+00:00:47,833 --> 00:00:53,833
+The tabs will allow users to switch between different.
+
+11
+00:00:54,333 --> 00:01:00,333
+第3条新闻：A Developers Guide to sync。Once: Your Go Concurrency Lifesaver.据Dev。
+
+12
+00:01:00,833 --> 00:01:05,233
+to报道，1。Hey, Lets Talk About sync.
+
+13
+00:01:05,733 --> 00:01:11,733
+Once If youve ever written Go code with goroutines flying everywhere, youve
+
+14
+00:01:12,233 --> 00:01:18,233
+probably hit that moment: Wait, how do I make.
+
+15
+00:01:18,733 --> 00:01:24,733
+第4条新闻：The Developer Habits That Outlive You: Quiet Integrity in Code。据Dev。
+
+16
+00:01:25,233 --> 00:01:31,233
+to报道，The best devs don't leave signatures。They leave clarity.Defaults that hold.
+
+17
+00:01:31,733 --> 00:01:37,733
+Names that guide.Habits that protect long after they've moved on.Today.
+
+18
+00:01:38,233 --> 00:01:44,233
+第5条新闻：AI automation ideas most developers miss。据Dev。
+
+19
+00:01:44,733 --> 00:01:50,733
+to报道，The automation landscape is full of hypeAI copilots, chatbots, and
+
+20
+00:01:51,233 --> 00:01:57,100
+generative content tools dominate headlines。
+
+21
+00:01:57,600 --> 00:02:02,800
+But many of the most valuable opportun.
+
+22
+00:02:03,300 --> 00:02:05,300
+接下来是今日科技快讯。
+
+23
+00:02:05,800 --> 00:02:11,666
+快讯1：Arweave AO Bootcamp 88 Ending  Appendix。
+
+24
+00:02:12,166 --> 00:02:16,966
+快讯2：Arweave AO Bootcamp 78 AO Token。
+
+25
+00:02:17,466 --> 00:02:23,466
+快讯3：Arweave AO Bootcamp 68 Custom JavaScript VM on AO。
+
+26
+00:02:23,966 --> 00:02:28,366
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
