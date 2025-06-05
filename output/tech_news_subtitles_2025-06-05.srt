@@ -1,0 +1,103 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-05，我为大家带来514条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：North America takes the bulk of AI VC investments, despite tough political
+
+4
+00:00:15,766 --> 00:00:17,766
+environment。
+
+5
+00:00:18,266 --> 00:00:24,266
+据TechCrunch报道，Despite what some experts have characterized as an environment
+
+6
+00:00:24,766 --> 00:00:30,766
+increasingly hostile to AI RD, North America continues to receive the bulk of AI
+
+7
+00:00:31,266 --> 00:00:33,266
+ventur。
+
+8
+00:00:33,766 --> 00:00:39,500
+第2条新闻：Thread vs Process in a nutshell。据Dev。
+
+9
+00:00:40,000 --> 00:00:46,000
+to报道，Understanding the difference between a thread and a process is fundamental
+
+10
+00:00:46,500 --> 00:00:52,233
+to building scalable and efficient systems。
+
+11
+00:00:52,733 --> 00:00:56,733
+What is a Process.A process i.
+
+12
+00:00:57,233 --> 00:01:03,233
+第3条新闻：Travel Itinerary Builder - AI-Powered Email-First Travel Organization。
+
+13
+00:01:03,733 --> 00:01:09,733
+据Dev。to报道，This is a submission for the Postmark Challenge: Inbox Innovators。
+
+14
+00:01:10,233 --> 00:01:16,233
+What I Built I built Travel Itinerary Builder - an AI-powered service that
+
+15
+00:01:16,733 --> 00:01:18,733
+transfor.
+
+16
+00:01:19,233 --> 00:01:25,233
+第4条新闻：Best bone conduction headphones of 2025: Expert tested and reviewed。
+
+17
+00:01:25,733 --> 00:01:31,733
+据ZDNet报道，Stay aware while you exercise with the best bone conduction headphones
+
+18
+00:01:32,233 --> 00:01:34,233
+we've tested。
+
+19
+00:01:34,733 --> 00:01:40,733
+第5条新闻：The First Wicked: For Good Trailer Promises Change。
+
+20
+00:01:41,233 --> 00:01:47,233
+据Gizmodo报道，Return to Oz as Cynthia Erivo and Ariana Grande dazzle and despair in
+
+21
+00:01:47,733 --> 00:01:52,799
+our first look at the 'Wicked' sequel。
+
+22
+00:01:53,299 --> 00:01:55,299
+接下来是今日科技快讯。
+
+23
+00:01:55,799 --> 00:01:59,933
+快讯1：Bolt Hackathon Day 630: UI。
+
+24
+00:02:00,433 --> 00:02:06,433
+快讯2：Meta raises the bar for Apples AI glasses ambitions。
+
+25
+00:02:06,933 --> 00:02:12,933
+快讯3：How big tech monopolies made the internet worse。
+
+26
+00:02:13,433 --> 00:02:17,833
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
