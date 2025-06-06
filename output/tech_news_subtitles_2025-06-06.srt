@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-06，我为大家带来525条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Now open  AWS Asia Pacific (Taipei) Region。
+
+4
+00:00:15,766 --> 00:00:21,766
+据AWS News报道，Today, Amazon Web Services (AWS) announced that AWS Asia Pacific
+
+5
+00:00:22,266 --> 00:00:28,266
+(Taipei) Region is generally available with three Availability Zones and Region
+
+6
+00:00:28,766 --> 00:00:30,766
+code。
+
+7
+00:00:31,266 --> 00:00:37,266
+第2条新闻：Silicon Valley Is Starting to Pick Sides in Musk and Trumps Breakup。
+
+8
+00:00:37,766 --> 00:00:43,766
+据Wired报道，As Elon Musk and US president Trump spar on social media, tech
+
+9
+00:00:44,266 --> 00:00:50,266
+investors and executives are being forced to choose whether to support the most
+
+10
+00:00:50,766 --> 00:00:52,766
+powerfu。
+
+11
+00:00:53,266 --> 00:00:59,266
+第3条新闻：A huge 330 price drop just made this top-rated Samsung tablet even better。
+
+12
+00:00:59,766 --> 00:01:05,766
+据Android Police报道，The lowest price we've seen。
+
+13
+00:01:06,266 --> 00:01:12,266
+第4条新闻：The best secure browsers for privacy in 2025: Expert tested。
+
+14
+00:01:12,766 --> 00:01:18,766
+据ZDNet报道，I've found the best browsers around that prioritize user security and
+
+15
+00:01:19,266 --> 00:01:25,266
+privacy over revenue through tracking and data collection。
+
+16
+00:01:25,766 --> 00:01:31,633
+第5条新闻：The best earbuds weve tested for 2025。
+
+17
+00:01:32,133 --> 00:01:38,133
+据The Verge报道，Its hard to buy a bad pair of wireless earbuds these days, and with
+
+18
+00:01:38,633 --> 00:01:44,633
+constant discounts and deals wherever you look, now is as good of a time as any
+
+19
+00:01:45,133 --> 00:01:47,133
+to。
+
+20
+00:01:47,633 --> 00:01:49,633
+接下来是今日科技快讯。
+
+21
+00:01:50,133 --> 00:01:56,133
+快讯1：Heres a list of some favorite devices that live on my desk, always。
+
+22
+00:01:56,633 --> 00:02:02,633
+快讯2：Here are three fantastic iCloud features you might not be taking advantage
+
+23
+00:02:03,133 --> 00:02:05,133
+of。
+
+24
+00:02:05,633 --> 00:02:11,633
+快讯3：Anthropic co-founder on cutting access to Windsurf。
+
+25
+00:02:12,133 --> 00:02:16,533
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
