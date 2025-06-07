@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-07，我为大家带来504条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：DDoS Protection: How to Monitor, Detect, and Defend Against Attacks。据Dev。
+
+4
+00:00:15,766 --> 00:00:21,766
+to报道，The Midnight Server Meltdown: What To Do When Your Backend Goes Silent
+
+5
+00:00:22,266 --> 00:00:28,266
+Imagine this: its a peaceful night, maybe youre winding down, enjoying a movie,。
+
+6
+00:00:28,766 --> 00:00:34,766
+第2条新闻：Untitled。据Dev.to报道，Check out this Pen I made!
+
+7
+00:00:35,266 --> 00:00:41,266
+第3条新闻：Web Performansını Optimize Et: Her Saniye Sayar。据Dev。
+
+8
+00:00:41,766 --> 00:00:47,766
+to报道，Yaz tatili birçok kişi için dinlenmek, yeni yerler keşfetmek ve aile ve
+
+9
+00:00:48,266 --> 00:00:54,266
+arkadaşlarla kaliteli zaman geçirmek demektir。
+
+10
+00:00:54,766 --> 00:00:59,033
+Deniz kenarında dinlenmek, yeni.
+
+11
+00:00:59,533 --> 00:01:05,533
+第4条新闻：VideoPrism: A Foundational Visual Encoder for Video Understanding。据Dev。
+
+12
+00:01:06,033 --> 00:01:12,033
+to报道，Long zhao,Googleのグループ Exsiting models Motion-centric models 36M First step:
+
+13
+00:01:12,533 --> 00:01:18,533
+train a video encoder Second step: Video-only Predict video-level global e。
+
+14
+00:01:19,033 --> 00:01:25,033
+第5条新闻：How to Configure Docker Volumes for MySQL。据Dev。
+
+15
+00:01:25,533 --> 00:01:31,533
+to报道，Docker containers are ephemeral by defaultthis means that any data stored
+
+16
+00:01:32,033 --> 00:01:38,033
+inside a container is lost when the container is stopped or removed。
+
+17
+00:01:38,533 --> 00:01:40,533
+To pers.
+
+18
+00:01:41,033 --> 00:01:43,033
+接下来是今日科技快讯。
+
+19
+00:01:43,533 --> 00:01:49,533
+快讯1：Google Messages Material 3 Expressive redesign comes to search, image
+
+20
+00:01:50,033 --> 00:01:52,033
+viewer, more。
+
+21
+00:01:52,533 --> 00:01:58,533
+快讯2：Popular AI apps get caught in the crosshairs of Anthropic and OpenAI。
+
+22
+00:01:59,033 --> 00:02:05,033
+快讯3：Your AI Design Assistant: How Codia is Transforming Creative Work。
+
+23
+00:02:05,533 --> 00:02:09,933
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
