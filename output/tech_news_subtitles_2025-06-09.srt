@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-09，我为大家带来243条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:12,866
+第1条新闻：VoiceMailMaster。据Dev。
+
+4
+00:00:13,366 --> 00:00:19,366
+to报道，This is a submission for the Postmark Challenge: Inbox Innovators。
+
+5
+00:00:19,866 --> 00:00:25,866
+VoiceMailMaster: Voice-Controlled Email Through Postmark Inbound Parsing What I
+
+6
+00:00:26,366 --> 00:00:28,366
+Bui.
+
+7
+00:00:28,866 --> 00:00:34,866
+第2条新闻：Top 5 Mistakes I Made as a Beginner Web Developer。据Dev。
+
+8
+00:00:35,366 --> 00:00:41,366
+to报道，Top 5 Mistakes I Made as a Beginner Web Developer (And How You Can Avoid
+
+9
+00:00:41,866 --> 00:00:44,933
+Them) You open VS Code。
+
+10
+00:00:45,433 --> 00:00:51,433
+Type html:5.Hit tab.Boom.Youve started.But thenso.
+
+11
+00:00:51,933 --> 00:00:57,933
+第3条新闻：Applying matching algorithms to real allocation problems。Part 2.据Dev。
+
+12
+00:00:58,433 --> 00:01:04,433
+to报道，In Part 1, we discussed how to match applicants to roles。
+
+13
+00:01:04,933 --> 00:01:10,933
+In this part, well explore how to determine which roles need to be filled to
+
+14
+00:01:11,433 --> 00:01:13,566
+complete the te.
+
+15
+00:01:14,066 --> 00:01:20,066
+第4条新闻：HealthSync Mail - Medical Appointment Coordination。据Dev。
+
+16
+00:01:20,566 --> 00:01:26,566
+to报道，This is a submission for the Postmark Challenge: Inbox Innovators。
+
+17
+00:01:27,066 --> 00:01:33,066
+What I Built HealthSync Mail revolutionizes healthcare appointment scheduling by
+
+18
+00:01:33,566 --> 00:01:35,566
+tr.
+
+19
+00:01:36,066 --> 00:01:42,066
+第5条新闻：Making Postr: Email-First App with Postmark's Inbound Parsing。据Dev。
+
+20
+00:01:42,566 --> 00:01:48,566
+to报道，This is a submission for the Postmark Challenge: Inbox Innovators。
+
+21
+00:01:49,066 --> 00:01:55,066
+Quick Video Demo What I Built Postr is a powerful messaging content creation app
+
+22
+00:01:55,566 --> 00:01:57,566
+b.
+
+23
+00:01:58,066 --> 00:02:00,066
+接下来是今日科技快讯。
+
+24
+00:02:00,566 --> 00:02:06,566
+快讯1：Hot Old Algorithms Looking for Features Near You!。
+
+25
+00:02:07,066 --> 00:02:13,066
+快讯2：Building API Clients Faster with apiexplorer.io and Martini。
+
+26
+00:02:13,566 --> 00:02:19,566
+快讯3：Say Hello to the New Saxbee Insurance Website。
+
+27
+00:02:20,066 --> 00:02:24,466
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
