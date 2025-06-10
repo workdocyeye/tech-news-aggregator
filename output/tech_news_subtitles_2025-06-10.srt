@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-10，我为大家带来452条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：You can now use a 'Fast' version of Veo 3 on that free AI plan that came
+
+4
+00:00:15,766 --> 00:00:17,899
+with your Pixel。
+
+5
+00:00:18,399 --> 00:00:24,133
+据Android Police报道，A great chance to try it。
+
+6
+00:00:24,633 --> 00:00:30,633
+第2条新闻：iOS 26 Features Battery Settings Overhaul。
+
+7
+00:00:31,133 --> 00:00:37,133
+据MacRumors报道，In iOS 26, Apple updated the Battery section of the Settings app to
+
+8
+00:00:37,633 --> 00:00:43,633
+provide a much more in-depth look at how your iPhone usage impacts battery life
+
+9
+00:00:44,133 --> 00:00:46,133
+an。
+
+10
+00:00:46,633 --> 00:00:52,633
+第3条新闻：Need help finsing the tight path forward to get my full stack as a
+
+11
+00:00:53,133 --> 00:00:55,133
+beginner。
+
+12
+00:00:55,633 --> 00:01:01,633
+据Dev。to报道，Hello friends my name is Nikolai。I'm from Orange County California.
+
+13
+00:01:02,133 --> 00:01:08,133
+I'm 39yrs old and I've been spending hours a day researching a new career.I was.
+
+14
+00:01:08,633 --> 00:01:14,633
+第4条新闻：How to Build a High-Performance Hypercasual Game Aggregator Like
+
+15
+00:01:15,133 --> 00:01:17,133
+RiseQuest。
+
+16
+00:01:17,633 --> 00:01:19,633
+据Dev。
+
+17
+00:01:20,133 --> 00:01:26,133
+to报道，In the fast-moving world of hypercasual gaming, having a centralized portal
+
+18
+00:01:26,633 --> 00:01:32,633
+can skyrocket both user engagement and SEO performance。
+
+19
+00:01:33,133 --> 00:01:35,666
+RiseQuest Game Hub.
+
+20
+00:01:36,166 --> 00:01:42,166
+第5条新闻：The best smart glasses on the market just got a major price cut, dropping
+
+21
+00:01:42,666 --> 00:01:45,199
+to an all-time low。
+
+22
+00:01:45,699 --> 00:01:51,699
+据Android Police报道，If you were curious, this is now a must-buy。
+
+23
+00:01:52,199 --> 00:01:54,199
+接下来是今日科技快讯。
+
+24
+00:01:54,699 --> 00:02:00,299
+快讯1：Building a Mega Menu and Menu Builder。
+
+25
+00:02:00,799 --> 00:02:06,799
+快讯2：Best email hosting services 2025: The best personal and business options。
+
+26
+00:02:07,299 --> 00:02:13,299
+快讯3：Astro: La elección ideal para sitios web。
+
+27
+00:02:13,799 --> 00:02:18,199
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
