@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-11，我为大家带来569条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Why trying to be clever is the fastest way to writing bad code。据Dev。
+
+4
+00:00:15,766 --> 00:00:21,766
+to报道，The 3 types of developers In my experience, there are 3 types of people
+
+5
+00:00:22,266 --> 00:00:28,266
+drawn to programming; The Tourist, The Puzzle Master, and The Builder。
+
+6
+00:00:28,766 --> 00:00:30,766
+The tou.
+
+7
+00:00:31,266 --> 00:00:37,266
+第2条新闻：Beginner-Friendly Guide "Maximum Difference Between Even and Odd Frequency
+
+8
+00:00:37,766 --> 00:00:43,100
+II" LeetCode 3445 (C JavaScript Python)。
+
+9
+00:00:43,600 --> 00:00:48,533
+据Dev。to报道，Hey, algorithm adventurers。
+
+10
+00:00:49,033 --> 00:00:55,033
+Today were diving into a tricky substring frequency problem from LeetCode 3445:
+
+11
+00:00:55,533 --> 00:01:00,866
+Maximum Difference Between Even and Odd.
+
+12
+00:01:01,366 --> 00:01:07,366
+第3条新闻：Whats the Fastest Way to Prototype an API Integration。据Dev。
+
+13
+00:01:07,866 --> 00:01:13,866
+to报道，You know the drill。Someone asks, Can you whip up a quick API integration.
+
+14
+00:01:14,366 --> 00:01:20,366
+You think: Sure, give me a few hours, Postman, some curl commands, a mock s.
+
+15
+00:01:20,866 --> 00:01:25,666
+第4条新闻：Fluent Validation em。NET.据Dev。
+
+16
+00:01:26,166 --> 00:01:32,166
+to报道，O FluentValidation é uma biblioteca que é utilizada para validar objetos de
+
+17
+00:01:32,666 --> 00:01:38,666
+formas simples, expressivas e desacoplada da lógica da aplicação。
+
+18
+00:01:39,166 --> 00:01:41,166
+É necess.
+
+19
+00:01:41,666 --> 00:01:47,666
+第5条新闻：A2A MCP: Predicting the Winner in AI Protocol Evolution。据Dev。
+
+20
+00:01:48,166 --> 00:01:54,166
+to报道，In today's rapidly evolving artificial intelligence landscape, protocol
+
+21
+00:01:54,666 --> 00:02:00,666
+standardization has become a key factor determining the direction of technolog。
+
+22
+00:02:01,166 --> 00:02:03,166
+接下来是今日科技快讯。
+
+23
+00:02:03,666 --> 00:02:05,799
+快讯1：about clash。
+
+24
+00:02:06,299 --> 00:02:09,233
+快讯2：logging and debug。
+
+25
+00:02:09,733 --> 00:02:15,733
+快讯3：Building a Teacher Search AI Agent with Mastra and Structured Data
+
+26
+00:02:16,233 --> 00:02:18,233
+Streaming。
+
+27
+00:02:18,733 --> 00:02:23,133
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
