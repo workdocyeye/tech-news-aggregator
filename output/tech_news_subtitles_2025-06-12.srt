@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-12，我为大家带来536条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Build an LLM Web App in Python from Scratch: Part 4 (FastAPI, Background
+
+4
+00:00:15,766 --> 00:00:17,766
+Tasks SSE)。
+
+5
+00:00:18,266 --> 00:00:20,266
+据Dev。
+
+6
+00:00:20,766 --> 00:00:26,766
+to报道，Ever asked an AI to write a whole blog post, only to stare at a loading
+
+7
+00:00:27,266 --> 00:00:33,266
+spinner for five minutes, wondering if your browser crashed。
+
+8
+00:00:33,766 --> 00:00:36,166
+We've all been th.
+
+9
+00:00:36,666 --> 00:00:42,666
+第2条新闻：Stop Wasting Time Debugging Markdown Previews  Meet SubhDev。com.据Dev。
+
+10
+00:00:43,166 --> 00:00:49,166
+to报道，As developers, bloggers, or tech writers, we all know the struggle: You
+
+11
+00:00:49,666 --> 00:00:51,666
+write Markdown。
+
+12
+00:00:52,166 --> 00:00:58,166
+You want to see how it actually looks.You open up clunky desk.
+
+13
+00:00:58,666 --> 00:01:04,666
+第3条新闻：Gmsh FEA  CFD mesh generation with MATLAB。据Dev。
+
+14
+00:01:05,166 --> 00:01:11,166
+to报道，Gmsh Mesh Generator Gmsh is a very capable and cross platform stand-alone
+
+15
+00:01:11,666 --> 00:01:17,666
+open source mesh generator for FEA and CFD applications。
+
+16
+00:01:18,166 --> 00:01:20,833
+In addition to many.
+
+17
+00:01:21,333 --> 00:01:27,333
+第4条新闻：Hexagonal Rails: Escape the Framework Trap。据Dev。
+
+18
+00:01:27,833 --> 00:01:33,300
+to报道，Your Rails app is not your business。
+
+19
+00:01:33,800 --> 00:01:39,800
+Lets face it: most Rails codebases look like this: class OrdersController
+
+20
+00:01:40,300 --> 00:01:45,500
+ApplicationController def create order.
+
+21
+00:01:46,000 --> 00:01:52,000
+第5条新闻：Why do we still fall back to email for messages outside our usual tools。
+
+22
+00:01:52,500 --> 00:01:54,500
+据Dev。
+
+23
+00:01:55,000 --> 00:02:01,000
+to报道，In my intro post, I gave a quick overview of RelayBeam: a platform I built
+
+24
+00:02:01,500 --> 00:02:07,500
+to handle both internal and external communication in one place。
+
+25
+00:02:08,000 --> 00:02:10,000
+In this po.
+
+26
+00:02:10,500 --> 00:02:12,500
+接下来是今日科技快讯。
+
+27
+00:02:13,000 --> 00:02:19,000
+快讯1：C vs C  Still Relevant or Dead Languages?。
+
+28
+00:02:19,500 --> 00:02:25,500
+快讯2：Stop Wasting Time on Bad Email Data: A Developer's Guide to Email
+
+29
+00:02:26,000 --> 00:02:28,000
+Verification。
+
+30
+00:02:28,500 --> 00:02:32,366
+快讯3：大三自学笔记探索Hyperlane框架的心路历程。
+
+31
+00:02:32,866 --> 00:02:37,266
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
