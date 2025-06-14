@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-14，我为大家带来512条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Beginners Guide to "Maximum Difference by Remapping a Digit" LeetCode 2566
+
+4
+00:00:15,766 --> 00:00:18,699
+(C JavaScript Python)。
+
+5
+00:00:19,199 --> 00:00:21,733
+据Dev。to报道，Hey Devs。
+
+6
+00:00:22,233 --> 00:00:28,233
+Lets break down a fun greedy string manipulation problem 2566: Maximum
+
+7
+00:00:28,733 --> 00:00:33,000
+Difference by Remapping a Digit.
+
+8
+00:00:33,500 --> 00:00:38,033
+This one is perfect for sharpenin.
+
+9
+00:00:38,533 --> 00:00:42,933
+第2条新闻：Stop Building AI Platforms。
+
+10
+00:00:43,433 --> 00:00:49,433
+据Towards Data Science报道，When small and medium companies achieve success in
+
+11
+00:00:49,933 --> 00:00:55,933
+building Data and ML platforms, building AI platforms is now profoundly
+
+12
+00:00:56,433 --> 00:01:00,166
+challenging The post Stop B。
+
+13
+00:01:00,666 --> 00:01:06,666
+第3条新闻：TargetJS: Code-Ordered Reactivity and Targets - A New Paradigm for UI
+
+14
+00:01:07,166 --> 00:01:09,166
+Development。
+
+15
+00:01:09,666 --> 00:01:11,666
+据Dev。
+
+16
+00:01:12,166 --> 00:01:18,166
+to报道，Introduction Reactive methods, where one method runs automatically when
+
+17
+00:01:18,666 --> 00:01:24,666
+another completes, whether synchronous or asynchronous, represent a powerful i。
+
+18
+00:01:25,166 --> 00:01:31,166
+第4条新闻：Application Framework: Cross-App Navigation Practice in HarmonyOS。据Dev。
+
+19
+00:01:31,666 --> 00:01:37,666
+to报道，Application Framework: Cross-App Navigation Practice Concept and Scenarios
+
+20
+00:01:38,166 --> 00:01:44,166
+of Cross-App Navigation Typical Scenario Implementation: Social Sharing Typ。
+
+21
+00:01:44,666 --> 00:01:50,666
+第5条新闻：DROGO Throne Ergonomic Gaming Chair Review: A Throne Built for Coders,
+
+22
+00:01:51,166 --> 00:01:54,099
+Creators Gamers Alike。
+
+23
+00:01:54,599 --> 00:01:56,599
+据Dev。
+
+24
+00:01:57,099 --> 00:02:03,099
+to报道，Looking for a chair that delivers on comfort, functionality, and durability
+
+25
+00:02:03,599 --> 00:02:07,999
+without the outrageous price tag。
+
+26
+00:02:08,499 --> 00:02:13,833
+The DROGO Throne Ergonomic Gaming Chair.
+
+27
+00:02:14,333 --> 00:02:16,333
+接下来是今日科技快讯。
+
+28
+00:02:16,833 --> 00:02:21,099
+快讯1：React para uma dev back-end。
+
+29
+00:02:21,599 --> 00:02:27,599
+快讯2：Frontend Framework'lerin Geleceği: Yenilikçi Yaklaşımlar。
+
+30
+00:02:28,099 --> 00:02:34,099
+快讯3：Como aprender matemática do zero: guia prático para quem quer dominar os
+
+31
+00:02:34,599 --> 00:02:36,599
+números。
+
+32
+00:02:37,099 --> 00:02:41,499
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
