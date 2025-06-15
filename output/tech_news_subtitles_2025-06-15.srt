@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-15，我为大家带来372条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：The Poetry and Horizon of Code Framework1749952076893200。据Dev。
+
+4
+00:00:15,766 --> 00:00:21,766
+to报道，As a third-year computer science student, code has, for me, long evolved
+
+5
+00:00:22,266 --> 00:00:28,266
+from a sterile set of instructions into a language rich with logical beauty a。
+
+6
+00:00:28,766 --> 00:00:34,766
+第2条新闻：Peak Performance Understated Power1749951935437800。据Dev。
+
+7
+00:00:35,266 --> 00:00:41,266
+to报道，As a junior pursuing a degree in Computer Science and Technology, my
+
+8
+00:00:41,766 --> 00:00:47,766
+programming endeavors often felt like an interminable cycle of "waiting。
+
+9
+00:00:48,266 --> 00:00:50,266
+" I'd wai.
+
+10
+00:00:50,766 --> 00:00:56,500
+第3条新闻：[Boost]。据Dev。to报道，Program Manager vs。
+
+11
+00:00:57,000 --> 00:01:03,000
+Project Manager: Understanding the Core Differences (For Developers Tech Teams)
+
+12
+00:01:03,500 --> 00:01:09,500
+Kruti for Teamcamp Jun 13 webdev management devc.
+
+13
+00:01:10,000 --> 00:01:16,000
+第4条新闻：The Heartbeat of Modern Web Applications1749951631313800。据Dev。
+
+14
+00:01:16,500 --> 00:01:22,500
+to报道，As a third-year student deeply passionate about computer science, I am
+
+15
+00:01:23,000 --> 00:01:29,000
+often amazed by the captivating "real-time" nature of modern internet applicati。
+
+16
+00:01:29,500 --> 00:01:35,500
+第5条新闻：A Duet of Performance and Safety1749951506201900。据Dev。
+
+17
+00:01:36,000 --> 00:01:42,000
+to报道，As a third-year student immersed in the world of computer science, my days
+
+18
+00:01:42,500 --> 00:01:48,500
+are consumed by the logic of code and the allure of algorithms。
+
+19
+00:01:49,000 --> 00:01:51,000
+However, wh.
+
+20
+00:01:51,500 --> 00:01:53,500
+接下来是今日科技快讯。
+
+21
+00:01:54,000 --> 00:01:58,533
+快讯1：Tanks, guns and face-painting。
+
+22
+00:01:59,033 --> 00:02:05,033
+快讯2：How AI  Tech Are Saving Our Cultural Heritage。
+
+23
+00:02:05,533 --> 00:02:11,533
+快讯3：My Journey Exploring Efficient Web Development Frameworks1749951324593600。
+
+24
+00:02:12,033 --> 00:02:16,433
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
