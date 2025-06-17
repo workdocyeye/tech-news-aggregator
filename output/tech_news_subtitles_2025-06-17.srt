@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-17，我为大家带来374条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Beginners Guide to SQL Server Stored Procedures。据Dev。
+
+4
+00:00:15,766 --> 00:00:21,500
+to报道，Imagine you're new to a software team。
+
+5
+00:00:22,000 --> 00:00:28,000
+You notice the same chunk of database code (SQL) copied and pasted in five
+
+6
+00:00:28,500 --> 00:00:30,766
+different places.
+
+7
+00:00:31,266 --> 00:00:33,799
+Your lead develope.
+
+8
+00:00:34,299 --> 00:00:40,299
+第2条新闻：3405。Count the Number of Arrays with K Matching Adjacent Elements.据Dev。
+
+9
+00:00:40,799 --> 00:00:42,799
+to报道，3405。
+
+10
+00:00:43,299 --> 00:00:49,299
+Count the Number of Arrays with K Matching Adjacent Elements Difficulty: Hard
+
+11
+00:00:49,799 --> 00:00:55,799
+Topics: Math, Combinatorics You are given three integers n, m, k.
+
+12
+00:00:56,299 --> 00:01:02,299
+第3条新闻：Is Basic Java Enough to Get a Job in 2025。据Dev。
+
+13
+00:01:02,799 --> 00:01:08,799
+to报道，In the ever-evolving tech industry, one question we hear a lot especially
+
+14
+00:01:09,299 --> 00:01:15,299
+from beginners is this: Is basic Java enough to get a job in 2025。
+
+15
+00:01:15,799 --> 00:01:17,799
+Its a f.
+
+16
+00:01:18,299 --> 00:01:22,833
+第4条新闻：Azure AI Foundry Intro。据Dev。
+
+17
+00:01:23,333 --> 00:01:29,333
+to报道，Title: Your First Look at Azure AI Foundry: Building Smart AI Assistants
+
+18
+00:01:29,833 --> 00:01:35,833
+for Your Business Hey there, future AI innovator。
+
+19
+00:01:36,333 --> 00:01:40,066
+You've probably heard a lot.
+
+20
+00:01:40,566 --> 00:01:46,566
+第5条新闻：鸿蒙运动项目开发封装超级好用的 RCP 网络库上 请求参数封装类型转化器与日志记录篇。据Dev。
+
+21
+00:01:47,066 --> 00:01:53,066
+to报道，鸿蒙核心技术运动开发 Remote Communication Kit远场通信服务
+
+22
+00:01:53,566 --> 00:01:59,566
+在鸿蒙运动项目开发中网络通信是不可或缺的一部分无论是获取运动数据同步用户信息还是加载运动视频资源都需要一个稳定高效且易于使用的网络库本文将带你深入探索如何封装一个超级好用的
+
+23
+00:02:00,066 --> 00:02:02,999
+RCP 网络库帮助你在鸿蒙开发中轻松应对各。
+
+24
+00:02:03,499 --> 00:02:05,499
+接下来是今日科技快讯。
+
+25
+00:02:05,999 --> 00:02:11,866
+快讯1：Frontend Teknikleri: Modern Yaklaşımlar。
+
+26
+00:02:12,366 --> 00:02:18,233
+快讯2：Ask HN: How to Deal with a Bad Manager?。
+
+27
+00:02:18,733 --> 00:02:24,733
+快讯3：Capítulo 3: Injeção de Dependências com CDI no Quarkus。
+
+28
+00:02:25,233 --> 00:02:29,633
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
