@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-18，我为大家带来537条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Smarter teams, brighter insights: Stack Overflow for Teams Business summer
+
+4
+00:00:15,766 --> 00:00:17,766
+bundle。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Stack Overflow Blog报道，Read on to see the latest features coming to Stack
+
+6
+00:00:24,766 --> 00:00:29,300
+Overflow for Teams Business users。
+
+7
+00:00:29,800 --> 00:00:35,799
+第2条新闻：My Experience with Hyperlane1750211331431600。据Dev。
+
+8
+00:00:36,299 --> 00:00:42,299
+to报道，My Experience with Hyperlane Introducing Hyperlane: The Next-Gen Rust Web
+
+9
+00:00:42,799 --> 00:00:48,799
+Framework Hyperlane is a high-performance, lightweight, and developer-friend。
+
+10
+00:00:49,299 --> 00:00:55,299
+第3条新闻：Senate passes GENIUS stablecoin bill in a win for the crypto industry。
+
+11
+00:00:55,799 --> 00:01:01,799
+据The Verge报道，In a 68-30 vote on Tuesday evening, the Senate overwhelmingly
+
+12
+00:01:02,299 --> 00:01:08,299
+passed the GENIUS Act with bipartisan support。
+
+13
+00:01:08,799 --> 00:01:14,400
+Eighteen Democrats joined the majority of.
+
+14
+00:01:14,900 --> 00:01:20,900
+第4条新闻：Google Drive tests moving scanner to the bottom bar on Android。
+
+15
+00:01:21,400 --> 00:01:27,400
+据9to5Google报道，For some, the Google Drive scanner is how they digitize documents
+
+16
+00:01:27,900 --> 00:01:33,900
+and receipts, and the Android app is testing a change that makes it more
+
+17
+00:01:34,400 --> 00:01:36,400
+prominent。
+
+18
+00:01:36,900 --> 00:01:42,900
+第5条新闻：Peak Performance Understated Power1750209513172600。据Dev。
+
+19
+00:01:43,400 --> 00:01:49,400
+to报道，As a junior pursuing a degree in Computer Science and Technology, my
+
+20
+00:01:49,900 --> 00:01:55,900
+programming endeavors often felt like an interminable cycle of "waiting。
+
+21
+00:01:56,400 --> 00:01:58,400
+" I'd wai.
+
+22
+00:01:58,900 --> 00:02:00,900
+接下来是今日科技快讯。
+
+23
+00:02:01,400 --> 00:02:07,400
+快讯1：14-HarmonyOS5-VisionKit-CardRecognition-Case。
+
+24
+00:02:07,900 --> 00:02:13,900
+快讯2：Score a massive 60 discount on this Blink Outdoor 4 camera bundle ahead
+
+25
+00:02:14,400 --> 00:02:16,400
+Prime Day。
+
+26
+00:02:16,900 --> 00:02:22,900
+快讯3：My Architectural Choices and Practical Experience1750208906585500。
+
+27
+00:02:23,400 --> 00:02:27,800
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
