@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-20，我为大家带来489条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：It's Not Just You: Apple Intelligence is Down on iOS 26 and Other Betas。
+
+4
+00:00:15,766 --> 00:00:21,766
+据MacRumors报道，Apple Intelligence has not been working for many hours today across
+
+5
+00:00:22,266 --> 00:00:28,266
+the first developer betas of iOS 26, iPadOS 26, and macOS Tahoe。
+
+6
+00:00:28,766 --> 00:00:31,166
+The issue has bee.
+
+7
+00:00:31,666 --> 00:00:37,666
+第2条新闻：The New Generation of High-Performance Web Frameworks1750382925210600。
+
+8
+00:00:38,166 --> 00:00:40,166
+据Dev。
+
+9
+00:00:40,666 --> 00:00:46,666
+to报道，In the current landscape of Rust Web frameworks, Hyperlane is increasingly
+
+10
+00:00:47,166 --> 00:00:53,166
+establishing itself as a formidable contender in the "new generation of lig。
+
+11
+00:00:53,666 --> 00:00:59,533
+第3条新闻：Labubu Doll: Origins and History。据Dev。
+
+12
+00:01:00,033 --> 00:01:06,033
+to报道，Original link: Labubu Doll: Origins and History Labubu was created by Hong
+
+13
+00:01:06,533 --> 00:01:12,533
+Kong-born artist Kasing Lung (龙家昇) as part of his Nordic-inspired Monsters。
+
+14
+00:01:13,033 --> 00:01:18,500
+第4条新闻：鸿蒙运动项目开发封装超级好用的 RCP 网络库下 实战应用。据Dev。
+
+15
+00:01:19,000 --> 00:01:25,000
+to报道，鸿蒙核心技术运动开发 Remote Communication Kit远场通信服务 在之前的文章中我们详细介绍了如何封装一个功能完备的 RCP
+
+16
+00:01:25,500 --> 00:01:31,500
+网络库并探讨了其核心功能和高级特性在本篇中我们将展示如何在鸿蒙运动项目中使用这个网络库来实现具体的网络请求功能 前言 在鸿蒙运动项目中网络请求是实现功能的关。
+
+17
+00:01:32,000 --> 00:01:38,000
+第5条新闻：Lambda Fluid Simulation Series, Part 1: The Stability Paradox vs。
+
+18
+00:01:38,500 --> 00:01:41,033
+Navier-Stokes.据Dev。
+
+19
+00:01:41,533 --> 00:01:47,533
+to报道，This article is Part 1 of a multi-part series on Lambda³ fluid simulation。
+
+20
+00:01:48,033 --> 00:01:54,033
+Part 1: The Stability Paradox vs.Navier-Stokes (You are here) Part 2: What.
+
+21
+00:01:54,533 --> 00:01:56,533
+接下来是今日科技快讯。
+
+22
+00:01:57,033 --> 00:02:03,033
+快讯1：Frontend'in Geleceği: Yenilikçi Yaklaşımlar。
+
+23
+00:02:03,533 --> 00:02:09,533
+快讯2：Mastering iOS Development: Your Essential Resource List。
+
+24
+00:02:10,033 --> 00:02:16,033
+快讯3：Azure Fundamentals: Microsoft.Automation。
+
+25
+00:02:16,533 --> 00:02:20,933
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
