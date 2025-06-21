@@ -1,0 +1,131 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-21，我为大家带来431条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：This 12 USB-C accessory is one of the best investments I've made for my
+
+4
+00:00:15,766 --> 00:00:17,766
+electronics。
+
+5
+00:00:18,266 --> 00:00:24,266
+据ZDNet报道，I've always valued these straightforward accessories - and now, they're
+
+6
+00:00:24,766 --> 00:00:28,100
+more practical than ever。
+
+7
+00:00:28,600 --> 00:00:34,600
+第2条新闻：terraform Fundamentals: ACM (Certificate Manager)。据Dev。
+
+8
+00:00:35,100 --> 00:00:41,100
+to报道，Managing TLS Certificates with Terraform: A Deep Dive into ACM The
+
+9
+00:00:41,600 --> 00:00:47,600
+relentless push for secure communication in modern infrastructure demands robust
+
+10
+00:00:48,100 --> 00:00:50,100
+TL。
+
+11
+00:00:50,600 --> 00:00:56,600
+第3条新闻：Beginner-Friendly Guide "Minimum Deletions to Make String K-Special"
+
+12
+00:00:57,100 --> 00:01:01,899
+LeetCode 3085 (C Python JavaScript)。
+
+13
+00:01:02,399 --> 00:01:04,400
+据Dev。
+
+14
+00:01:04,900 --> 00:01:10,900
+to报道，LeetCode 3085 Medium Greedy Frequency Analysis Problem Summary You are
+
+15
+00:01:11,400 --> 00:01:17,400
+given: A string word consisting of lowercase letters。
+
+16
+00:01:17,900 --> 00:01:20,700
+An integer k.A strin.
+
+17
+00:01:21,200 --> 00:01:27,200
+第4条新闻：Mastering Full-Stack Authentication with Django REST Framework and React。
+
+18
+00:01:27,700 --> 00:01:29,700
+据Dev。
+
+19
+00:01:30,200 --> 00:01:36,200
+to报道，From a blank screen to a fully functional login flow this has been one of
+
+20
+00:01:36,700 --> 00:01:42,700
+the most rewarding challenges in my personal project。
+
+21
+00:01:43,200 --> 00:01:46,000
+Introduction Not lon.
+
+22
+00:01:46,500 --> 00:01:52,500
+第5条新闻：Arka Planın Sırları: Verimli Kodlama。据Dev。
+
+23
+00:01:53,000 --> 00:01:59,000
+to报道，Yazılım geliştirme, her geçen gün daha da karmaşıklaşan bir alan haline
+
+24
+00:01:59,500 --> 00:02:01,500
+geliyor。
+
+25
+00:02:02,000 --> 00:02:08,000
+Geliştiriciler, kullanıcı deneyimini optimize etmek ve güçlü, ölçekle.
+
+26
+00:02:08,500 --> 00:02:10,500
+接下来是今日科技快讯。
+
+27
+00:02:11,000 --> 00:02:15,666
+快讯1：IBM Fundamentals: Cf Log Slack。
+
+28
+00:02:16,166 --> 00:02:22,166
+快讯2：Mastering Column-Family NoSQL: Your Essential Guide to Cassandra HBase
+
+29
+00:02:22,666 --> 00:02:24,666
+Resources。
+
+30
+00:02:25,166 --> 00:02:31,166
+快讯3：golang go concurrency goroutines Let's master concurrency in go from
+
+31
+00:02:31,666 --> 00:02:33,800
+absolute basics。
+
+32
+00:02:34,300 --> 00:02:37,500
+Be a part of my journey.
+
+33
+00:02:38,000 --> 00:02:42,400
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
