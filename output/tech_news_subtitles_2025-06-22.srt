@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-22，我为大家带来350条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Beginner-Friendly Guide "Divide a String Into Groups of Size k" - LeetCode
+
+4
+00:00:15,766 --> 00:00:19,366
+2138 (C Python JavaScript)。
+
+5
+00:00:19,866 --> 00:00:21,866
+据Dev。
+
+6
+00:00:22,366 --> 00:00:28,366
+to报道，LeetCode 2138 Easy String Manipulation Problem Summary You are given: A
+
+7
+00:00:28,866 --> 00:00:34,866
+string s consisting of lowercase English letters An integer k representing。
+
+8
+00:00:35,366 --> 00:00:41,366
+第2条新闻：The Quiet Gap in How We Message People Today。据Dev。
+
+9
+00:00:41,866 --> 00:00:47,866
+to报道，Weve built tools for every kind of interaction。
+
+10
+00:00:48,366 --> 00:00:54,366
+Slack and Microsoft Teams for internal teams WhatsApp and Telegram for friends
+
+11
+00:00:54,866 --> 00:00:58,066
+But what happens when y.
+
+12
+00:00:58,566 --> 00:01:04,566
+第3条新闻：Using Cloudinary's New MCP Server to Scrape Mozarella, Camembert and
+
+13
+00:01:05,066 --> 00:01:07,066
+Parmesan。
+
+14
+00:01:07,566 --> 00:01:09,566
+据Dev。
+
+15
+00:01:10,066 --> 00:01:16,066
+to报道，image from Midjourney, amusingly prompted as 'cheesecore' I'm always
+
+16
+00:01:16,566 --> 00:01:22,566
+interested in how new technology can help us make our esoteric tasks a little
+
+17
+00:01:23,066 --> 00:01:25,066
+les。
+
+18
+00:01:25,566 --> 00:01:31,566
+第4条新闻：Web Mimarisi: Geleceğin Temelleri。据Dev。
+
+19
+00:01:32,066 --> 00:01:38,066
+to报道，Web teknolojileri, günümüzün dijital dünyasında her şeyin temelini
+
+20
+00:01:38,566 --> 00:01:44,566
+oluşturur ve web mimarisi, bu teknolojilerin kusursuz bir şekilde bir araya
+
+21
+00:01:45,066 --> 00:01:47,066
+gelmesi。
+
+22
+00:01:47,566 --> 00:01:53,566
+第5条新闻：Truth Social Crashes as Trump Live-Posts Iran Bombing。
+
+23
+00:01:54,066 --> 00:02:00,066
+据Wired报道，The social network started experiencing global outages within minutes
+
+24
+00:02:00,566 --> 00:02:06,566
+of Donald Trump posting details of a US military strike on Iran。
+
+25
+00:02:07,066 --> 00:02:09,066
+接下来是今日科技快讯。
+
+26
+00:02:09,566 --> 00:02:15,566
+快讯1：2138. Divide a String Into Groups of Size k。
+
+27
+00:02:16,066 --> 00:02:20,599
+快讯2：Ubuntu Fundamentals: Synaptic。
+
+28
+00:02:21,099 --> 00:02:27,099
+快讯3：Unlock the Metaverse: 19 Essential Resources for Virtual Reality Exploration
+
+29
+00:02:27,599 --> 00:02:29,733
+and Development。
+
+30
+00:02:30,233 --> 00:02:34,633
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
