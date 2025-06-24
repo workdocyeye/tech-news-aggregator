@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-24，我为大家带来355条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：Huawei's Self-Developed Cangjie Programming Language to Go Open Source,
+
+4
+00:00:15,766 --> 00:00:21,766
+Sharing Equal Status with ArkTS in the Future。
+
+5
+00:00:22,266 --> 00:00:24,266
+据Dev。
+
+6
+00:00:24,766 --> 00:00:30,766
+to报道，At the Huawei Developer Conference 2025 (HDC 2025) on June 20, 2025, Huawei
+
+7
+00:00:31,266 --> 00:00:37,266
+officially announced the launch of the HarmonyOS 6 Developer Beta version,。
+
+8
+00:00:37,766 --> 00:00:43,766
+第2条新闻：Not a wearable, court documents detail OpenAIs plans for its AI hardware
+
+9
+00:00:44,266 --> 00:00:47,200
+project with Jony Ive。
+
+10
+00:00:47,700 --> 00:00:53,700
+据9to5Mac报道，As OpenAI fights a trademark lawsuit over its now-scrubbed io brand,
+
+11
+00:00:54,200 --> 00:01:00,200
+new public court filings are giving us the most detailed glimpse yet into what
+
+12
+00:01:00,700 --> 00:01:02,700
+Sa。
+
+13
+00:01:03,200 --> 00:01:09,200
+第3条新闻：Still using npm for everything。Time to level up your JavaScript game.据Dev。
+
+14
+00:01:09,700 --> 00:01:15,566
+to报道，The JS ecosystem has evolved MASSIVELY。
+
+15
+00:01:16,066 --> 00:01:22,066
+Here's your 2025 cheat sheet: PACKAGE MANAGERS npm - The reliable classic Comes
+
+16
+00:01:22,566 --> 00:01:24,566
+with Node.
+
+17
+00:01:25,066 --> 00:01:27,599
+js (zero setup)  M.
+
+18
+00:01:28,099 --> 00:01:34,099
+第4条新闻：Harmony-Free: Hengong Preferences - Preferences Settings。据Dev。
+
+19
+00:01:34,599 --> 00:01:40,200
+to报道，Hello everyone, nice to meet you all。
+
+20
+00:01:40,700 --> 00:01:46,700
+Today, we are going to talk about the preferences data storage commonly used in
+
+21
+00:01:47,200 --> 00:01:49,200
+HarmonyOS.
+
+22
+00:01:49,700 --> 00:01:52,633
+During the developmen.
+
+23
+00:01:53,133 --> 00:01:59,133
+第5条新闻：Deailing with OAuth SSR in a Next。js project.据Dev。
+
+24
+00:01:59,633 --> 00:02:05,633
+to报道，Welcome to the CODESESSION001 the first article so far。
+
+25
+00:02:06,133 --> 00:02:12,133
+In today's article, we will practise end-to-end autherization authentication
+
+26
+00:02:12,633 --> 00:02:14,900
+system for our b.
+
+27
+00:02:15,400 --> 00:02:17,400
+接下来是今日科技快讯。
+
+28
+00:02:17,900 --> 00:02:22,966
+快讯1：Explain in 5 Levels of Difficulty。
+
+29
+00:02:23,466 --> 00:02:29,466
+快讯2：。NET Learning Notes: How to View Code Coverage in.
+
+30
+00:02:29,966 --> 00:02:35,966
+NET Projects(with Coverlet  Reportgenerator).
+
+31
+00:02:36,466 --> 00:02:42,466
+快讯3：Backend Optimizasyonu: Verimlilik Artışı。
+
+32
+00:02:42,966 --> 00:02:47,366
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
