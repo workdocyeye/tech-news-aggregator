@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-25，我为大家带来505条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：No More Boring Roadmaps  I Built an AI That Designs Yours Visually。据Dev。
+
+4
+00:00:15,766 --> 00:00:21,766
+to报道，Are you tired of static roadmap templates that don't fit your goals。
+
+5
+00:00:22,266 --> 00:00:28,266
+Meet Visual AI Roadmap Creator an interactive tool that helps you design custom.
+
+6
+00:00:28,766 --> 00:00:34,766
+第2条新闻：Why API Integration Is Too Important to Leave to Non-Developers。据Dev。
+
+7
+00:00:35,266 --> 00:00:41,266
+to报道，Lets be honestAPI integration is one of the most deceptively complex tasks
+
+8
+00:00:41,766 --> 00:00:44,700
+in modern development。
+
+9
+00:00:45,200 --> 00:00:51,200
+From the outside.Looks simple.Plug one system into.
+
+10
+00:00:51,700 --> 00:00:57,700
+第3条新闻：HarmonyOS Flutter Wakelock Plugin (Screen Wake Lock Management)。据Dev。
+
+11
+00:00:58,200 --> 00:01:04,200
+to报道，HarmonyOS Flutter Wakelock Plugin (Screen Wake Lock Management) I。
+
+12
+00:01:04,700 --> 00:01:08,833
+MethodChannel Implementation 1.
+
+13
+00:01:09,333 --> 00:01:15,333
+Flutter Code Implementation Defining the Wakelock A.
+
+14
+00:01:15,833 --> 00:01:21,833
+第4条新闻：HarmonyOS Flutter Video Trimmer (Video Clipping Implementation)。据Dev。
+
+15
+00:01:22,333 --> 00:01:28,333
+to报道，HarmonyOS Flutter Video Trimmer (Video Clipping Implementation)
+
+16
+00:01:28,833 --> 00:01:34,833
+Introduction videotrimmer is a third-party library for video clipping
+
+17
+00:01:35,333 --> 00:01:37,466
+capabilities in。
+
+18
+00:01:37,966 --> 00:01:43,966
+第5条新闻：Modul tampilkan di Earl: Menampilkan Nilai dengan Format yang Terkontrol。
+
+19
+00:01:44,466 --> 00:01:46,466
+据Dev。
+
+20
+00:01:46,966 --> 00:01:52,966
+to报道，Teks ini beberapa dibuat oleh generative AI Singkatnya untuk mencetak
+
+21
+00:01:53,466 --> 00:01:55,466
+layar。
+
+22
+00:01:55,966 --> 00:02:01,966
+Inilah yang namanya disebut perintah tampilkan di bahasa Pemrograman Earl.
+
+23
+00:02:02,466 --> 00:02:04,466
+接下来是今日科技快讯。
+
+24
+00:02:04,966 --> 00:02:10,966
+快讯1：HarmonyOS Flutter QR Code Generation Plugin。
+
+25
+00:02:11,466 --> 00:02:17,466
+快讯2：HarmonyOS Flutter MVVM Architecture Pattern。
+
+26
+00:02:17,966 --> 00:02:23,966
+快讯3：HarmonyOS Flutter File Sharing Plugin (Supports Text, Images, Videos, and
+
+27
+00:02:24,466 --> 00:02:26,466
+Files)。
+
+28
+00:02:26,966 --> 00:02:31,366
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
