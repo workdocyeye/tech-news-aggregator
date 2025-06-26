@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-26，我为大家带来529条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Query the Records Closest to the Specified Time Each Day From SQL to SPL
+
+9
+00:00:43,600 --> 00:00:45,600
+43。
+
+10
+00:00:46,100 --> 00:00:48,100
+据Dev。
+
+11
+00:00:48,600 --> 00:00:54,600
+to报道，Problem Description Analysis: A table in Oracle database has a column of
+
+12
+00:00:55,100 --> 00:01:01,100
+datetime type, corresponding to multiple pieces of data per day: Task: Now w。
+
+13
+00:01:01,600 --> 00:01:07,599
+第3条新闻：Huawei HarmonyOS AppStartup Framework: A Powerful Assistant for Optimizing
+
+14
+00:01:08,099 --> 00:01:12,366
+Application Startup Performance。
+
+15
+00:01:12,866 --> 00:01:14,866
+据Dev。to报道，I。
+
+16
+00:01:15,366 --> 00:01:21,366
+Overview of the AppStartup Framework (A) Core Concepts The AppStartup framework
+
+17
+00:01:21,866 --> 00:01:27,866
+acts as a centralized task orchestrator for application startup pro.
+
+18
+00:01:28,366 --> 00:01:34,366
+第4条新闻：HarmonyOS Flutter PackageInfo Plugin (Retrieving Package Metadata)。据Dev。
+
+19
+00:01:34,866 --> 00:01:39,933
+to报道，I。MethodChannel Implementation 1.
+
+20
+00:01:40,433 --> 00:01:46,433
+Flutter Code Implementation Creating a MethodChannel Receiving Parameters static
+
+21
+00:01:46,933 --> 00:01:51,333
+const MethodChannel _channel Met.
+
+22
+00:01:51,833 --> 00:01:57,833
+第5条新闻：HarmonyOS Flutter Contacts Integration (Accessing Native Address Book)。
+
+23
+00:01:58,333 --> 00:02:00,333
+据Dev。to报道，I。
+
+24
+00:02:00,833 --> 00:02:06,833
+Establishing Channels on the OHOS Side Requesting Permissions const permissions:
+
+25
+00:02:07,333 --> 00:02:09,333
+Array [ 'ohos.
+
+26
+00:02:09,833 --> 00:02:15,833
+permission.READ_CONTACTS', 'ohos.permission.WRITE_C.
+
+27
+00:02:16,333 --> 00:02:18,333
+接下来是今日科技快讯。
+
+28
+00:02:18,833 --> 00:02:24,833
+快讯1：Exploring the Multiline Text Input Component (Textarea) in Huawei HarmonyOS。
+
+29
+00:02:25,333 --> 00:02:31,333
+快讯2：Deep Dive into ArkWeb: Building Efficient and Secure Web Components。
+
+30
+00:02:31,833 --> 00:02:37,833
+快讯3：Como funciona o cálculo do CNPJ? Entenda de forma simples。
+
+31
+00:02:38,333 --> 00:02:42,733
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
