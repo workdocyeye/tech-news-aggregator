@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-27，我为大家带来501条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Snag the Beats Pill now while its hitting its lowest price ever。
+
+9
+00:00:43,600 --> 00:00:49,600
+据Android Police报道，This sleek speaker is yours for under 100。
+
+10
+00:00:50,100 --> 00:00:56,100
+第3条新闻：Untitle。据Dev.to报道，Check out this Pen I made!
+
+11
+00:00:56,600 --> 00:01:02,600
+第4条新闻：Without a Native Operating System, Decentralized AI Cannot Exist This Is
+
+12
+00:01:03,100 --> 00:01:05,633
+Why SeaOS Was Born。
+
+13
+00:01:06,133 --> 00:01:08,133
+据Dev。
+
+14
+00:01:08,633 --> 00:01:14,633
+to报道，Over the past two years, decentralized AI has rapidly emerged as a buzzword
+
+15
+00:01:15,133 --> 00:01:18,599
+across the Web3 landscape。
+
+16
+00:01:19,099 --> 00:01:25,099
+From on-chain agents and AI-enhanced smart cont.
+
+17
+00:01:25,599 --> 00:01:31,599
+第5条新闻：Implementing an Exam Timer in HarmonyOS Next。据Dev。
+
+18
+00:01:32,099 --> 00:01:38,099
+to报道，Implementing an Exam Timer in HarmonyOS Next typescript Entry Component
+
+19
+00:01:38,599 --> 00:01:44,599
+struct QuickTestMainPage { State paperAllTime: number 0; Total exam duration。
+
+20
+00:01:45,099 --> 00:01:47,099
+接下来是今日科技快讯。
+
+21
+00:01:47,599 --> 00:01:53,599
+快讯1：Implementing Responsive Tab Bar in HarmonyOS Next。
+
+22
+00:01:54,099 --> 00:02:00,099
+快讯2：Implementing Responsive Knowledge Point Layouts in HarmonyOS Next。
+
+23
+00:02:00,599 --> 00:02:05,266
+快讯3：HarmonyOS NEXT开发实战从图标库到布局属性全解析。
+
+24
+00:02:05,766 --> 00:02:10,166
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
