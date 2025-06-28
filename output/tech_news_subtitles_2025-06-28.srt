@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-28，我为大家带来478条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Dad's Canned Jokes - June CSS Art Challenge。据Dev。
+
+9
+00:00:43,600 --> 00:00:49,600
+to报道，This is a submission for Frontend Challenge - June Celebrations, CSS Art:
+
+10
+00:00:50,100 --> 00:00:52,500
+June Celebrations。
+
+11
+00:00:53,000 --> 00:00:59,000
+Inspiration We celebrate Father's Day in June and Dads ar.
+
+12
+00:00:59,500 --> 00:01:05,500
+第3条新闻：My Developer Portfolio Is Live and Now Fully Responsive。据Dev。
+
+13
+00:01:06,000 --> 00:01:12,000
+to报道，Bringing your work into production is thrillinguntil something breaks and
+
+14
+00:01:12,500 --> 00:01:14,900
+you dont know why。
+
+15
+00:01:15,400 --> 00:01:21,400
+Thats exactly what I faced while deploying my Django-base.
+
+16
+00:01:21,900 --> 00:01:27,900
+第4条新闻：Memes only a DEV can relate to. (part 2)。
+
+17
+00:01:28,400 --> 00:01:34,400
+第5条新闻：2099。Find Subsequence of Length K With the Largest Sum.据Dev。to报道，2099。
+
+18
+00:01:34,900 --> 00:01:40,900
+Find Subsequence of Length K With the Largest Sum Difficulty: Easy Topics:
+
+19
+00:01:41,400 --> 00:01:47,400
+Array, Hash Table, Sorting, Heap (Priority Queue) You are given an in.
+
+20
+00:01:47,900 --> 00:01:49,900
+接下来是今日科技快讯。
+
+21
+00:01:50,400 --> 00:01:55,200
+快讯1：API Testing: From cURL to Click。
+
+22
+00:01:55,700 --> 00:01:59,299
+快讯2：AWS Fundamentals: Dsql。
+
+23
+00:01:59,799 --> 00:02:05,799
+快讯3：Tried Gemini CLI  10 Million Tokens Consumed in 2 Hours!。
+
+24
+00:02:06,299 --> 00:02:10,699
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
