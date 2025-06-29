@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-29，我为大家带来365条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Check out how AI is reshaping creator marketing with real data insights。
+
+9
+00:00:43,600 --> 00:00:49,600
+据Hacker News报道，Article URL: https:old。reddit.
+
+10
+00:00:50,100 --> 00:00:56,100
+comrIndiaBusinesscomments1ln2jd2hey_folks_ever_wondered_how_those_ancient_folk
+
+11
+00:00:56,600 --> 00:00:59,933
+Comments URL: https:news.
+
+12
+00:01:00,433 --> 00:01:02,700
+ycombinator.comi.
+
+13
+00:01:03,200 --> 00:01:09,200
+第3条新闻：Move Over LLaMA: Tencent's New Open LLM is Ready to Self-Host。据Dev。
+
+14
+00:01:09,700 --> 00:01:15,700
+to报道，Tencent just released a new open-source model called Hunyuan-A13B-Instruct。
+
+15
+00:01:16,200 --> 00:01:22,200
+It has open weights (not sure about code), and it runs locally (well if yo.
+
+16
+00:01:22,700 --> 00:01:26,966
+第4条新闻：HackThisSite Basic 7。据Dev。
+
+17
+00:01:27,466 --> 00:01:33,466
+to报道，Since I am already familiar with MacOS, UNIX commands are not new to me。
+
+18
+00:01:33,966 --> 00:01:39,966
+;ls lists files and directories in the current directory.This one was fairly.
+
+19
+00:01:40,466 --> 00:01:44,733
+第5条新闻：A full circle moment。据Dev。
+
+20
+00:01:45,233 --> 00:01:51,233
+to报道，Just had one of those moments, that showed me, why I started programming in
+
+21
+00:01:51,733 --> 00:01:53,866
+the first place。
+
+22
+00:01:54,366 --> 00:02:00,366
+A few months ago I wrote a CLI tool in C, to benchmark bi.
+
+23
+00:02:00,866 --> 00:02:02,866
+接下来是今日科技快讯。
+
+24
+00:02:03,366 --> 00:02:09,366
+快讯1：Satellites keep breaking up in space. Insurance won't cover them。
+
+25
+00:02:09,866 --> 00:02:15,866
+快讯2：CSS Art: Brazil's traditional Festas Juninas。
+
+26
+00:02:16,366 --> 00:02:22,366
+快讯3：SwiftUI Simplified: Build iOS Apps by Describing What You Want。
+
+27
+00:02:22,866 --> 00:02:27,266
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
