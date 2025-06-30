@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-06-30，我为大家带来215条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Understanding Quota Project Warnings When Using Google Cloud ADC。据Dev。
+
+9
+00:00:43,600 --> 00:00:49,600
+to报道，This article covers authentication credentials when developing applications
+
+10
+00:00:50,100 --> 00:00:52,233
+on Google Cloud。
+
+11
+00:00:52,733 --> 00:00:58,733
+When you run the gcloud auth application-default login co.
+
+12
+00:00:59,233 --> 00:01:05,233
+第3条新闻：Você conhece os pilares da programação orientada a objetos。据Dev。
+
+13
+00:01:05,733 --> 00:01:11,733
+to报道，A Orientação a Objetos (OOP) revolucionou o desenvolvimento de software ao
+
+14
+00:01:12,233 --> 00:01:18,233
+permitir modelar sistemas como conjuntos de entidades interconectadas, espe。
+
+15
+00:01:18,733 --> 00:01:24,733
+第4条新闻：How Fast Can Autosteer Systems Pay for Themselves。据Dev。
+
+16
+00:01:25,233 --> 00:01:31,233
+to报道，How Fast Can Tractor Autosteer Systems Pay for Themselves。
+
+17
+00:01:31,733 --> 00:01:37,733
+In todays competitive agricultural landscape, every investment needs a clear
+
+18
+00:01:38,233 --> 00:01:40,233
+return.
+
+19
+00:01:40,733 --> 00:01:42,733
+For de.
+
+20
+00:01:43,233 --> 00:01:49,233
+第5条新闻：How I Use Self-Reflection to Stay on Track Daily, Weekly, Monthly, and
+
+21
+00:01:49,733 --> 00:01:51,733
+Yearly。
+
+22
+00:01:52,233 --> 00:01:54,233
+据Dev。
+
+23
+00:01:54,733 --> 00:02:00,733
+to报道，If youre not reflecting, youre just reacting, letting others put things on
+
+24
+00:02:01,233 --> 00:02:03,233
+your calendar。
+
+25
+00:02:03,733 --> 00:02:09,733
+Self-reflection is critical for ensuring you spend your time.
+
+26
+00:02:10,233 --> 00:02:12,233
+接下来是今日科技快讯。
+
+27
+00:02:12,733 --> 00:02:18,733
+快讯1：Practical Case of HarmonyOS NEXT Cangjie Development Language: Movie App。
+
+28
+00:02:19,233 --> 00:02:25,233
+快讯2：She Got a Permit for Her Chickens. Now the City Is Fining Her 80k。
+
+29
+00:02:25,733 --> 00:02:29,066
+快讯3：String in Python (7)。
+
+30
+00:02:29,566 --> 00:02:33,966
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
