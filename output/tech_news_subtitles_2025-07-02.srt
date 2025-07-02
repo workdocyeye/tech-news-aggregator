@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-07-02，我为大家带来510条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Earth is trapping much more heat than climate models forecast and the rate
+
+9
+00:00:43,600 --> 00:00:46,799
+has doubled in 20 years。
+
+10
+00:00:47,299 --> 00:00:49,299
+据Dev。
+
+11
+00:00:49,799 --> 00:00:55,799
+to报道，Earth is trapping much more heat than climate models forecast and the rate
+
+12
+00:00:56,299 --> 00:01:02,299
+has doubled in 20 years Real world measurements of how much extra heat the。
+
+13
+00:01:02,799 --> 00:01:08,799
+第3条新闻：A Pro-Russia Disinformation Campaign Is Using Free AI Tools to Fuel a
+
+14
+00:01:09,299 --> 00:01:11,833
+Content Explosion'。
+
+15
+00:01:12,333 --> 00:01:14,333
+据Dev。
+
+16
+00:01:14,833 --> 00:01:20,833
+to报道，A Pro-Russia Disinformation Campaign Is Using Free AI Tools to Fuel a
+
+17
+00:01:21,333 --> 00:01:27,333
+Content Explosion WIRED Consumer-grade AI tools have supercharged Russian-align。
+
+18
+00:01:27,833 --> 00:01:33,833
+第4条新闻：Protesters accuse Google of violating its promises on AI safety: 'AI
+
+19
+00:01:34,333 --> 00:01:40,333
+companies are less regulated than sandwich shops'。
+
+20
+00:01:40,833 --> 00:01:42,833
+据Dev。
+
+21
+00:01:43,333 --> 00:01:49,333
+to报道，Protesters Accuse Google of Breaking Its Promises on AI Safety - Business
+
+22
+00:01:49,833 --> 00:01:55,833
+Insider Demonstrators gathered outside Google DeepMind's London office on Mo。
+
+23
+00:01:56,333 --> 00:02:02,333
+第5条新闻：Building QuickClinic A Scalable Java Microservices-Based Healthcare
+
+24
+00:02:02,833 --> 00:02:04,833
+Platform。
+
+25
+00:02:05,333 --> 00:02:07,333
+据Dev。
+
+26
+00:02:07,833 --> 00:02:13,833
+to报道，Github X Hey devs Im currently working on a full-stack microservices
+
+27
+00:02:14,333 --> 00:02:20,333
+project called QuickClinic a modern, scalable healthcare booking platform built。
+
+28
+00:02:20,833 --> 00:02:22,833
+接下来是今日科技快讯。
+
+29
+00:02:23,333 --> 00:02:29,333
+快讯1：I Tried to Automate Knowledge Graph Schema and It Blew My Mind。
+
+30
+00:02:29,833 --> 00:02:35,833
+快讯2：Sam Altman takes his io' trademark battle public。
+
+31
+00:02:36,333 --> 00:02:42,199
+快讯3：Deployment Automation 11751418716011000。
+
+32
+00:02:42,699 --> 00:02:47,099
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
