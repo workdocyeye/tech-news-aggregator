@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-07-03，我为大家带来511条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Cross Platform Web Write Once Run Rust Framework1751506224416200。据Dev。
+
+9
+00:00:43,600 --> 00:00:49,600
+to报道，Cross-Platform: Write Once, Run Everywhere As a third-year computer science
+
+10
+00:00:50,100 --> 00:00:56,100
+student, I frequently face challenges with cross-platform deployment when。
+
+11
+00:00:56,600 --> 00:01:02,600
+第3条新闻：Can Modern Systems Run Out of Memory Effects on malloc()。据Dev。
+
+12
+00:01:03,100 --> 00:01:09,099
+to报道，Introduction Its easy to assume that the vast memory available in modern
+
+13
+00:01:09,599 --> 00:01:15,599
+computers solves the age-old problem of running out of memory。
+
+14
+00:01:16,099 --> 00:01:18,099
+With consumer.
+
+15
+00:01:18,599 --> 00:01:24,599
+第4条新闻：Critical Security Importance Digital Age Web Techniques1751505540803000。
+
+16
+00:01:25,099 --> 00:01:27,099
+据Dev。
+
+17
+00:01:27,599 --> 00:01:33,599
+to报道，As a third-year computer science student, my curiosity constantly pushes me
+
+18
+00:01:34,099 --> 00:01:37,833
+to explore new technologies。
+
+19
+00:01:38,333 --> 00:01:44,333
+Through numerous coding and deployment experi.
+
+20
+00:01:44,833 --> 00:01:50,833
+第5条新闻：Why Learn Powerful Shell Scripting Even When We Have Python, PowerShell,
+
+21
+00:01:51,333 --> 00:01:53,333
+and Go。
+
+22
+00:01:53,833 --> 00:01:55,833
+据Dev。
+
+23
+00:01:56,333 --> 00:02:02,333
+to报道，"Why still invest time in learning Shell Scripting when we have Python or
+
+24
+00:02:02,833 --> 00:02:04,833
+PowerShell。
+
+25
+00:02:05,333 --> 00:02:11,333
+" Let me give you a strong, clear, and well-balanced write-up tha.
+
+26
+00:02:11,833 --> 00:02:13,833
+接下来是今日科技快讯。
+
+27
+00:02:14,333 --> 00:02:20,333
+快讯1：Ferramentas de Build JavaScript Modernas: Um Guia Abrangente para Webpack,
+
+28
+00:02:20,833 --> 00:02:24,966
+Vite e Alternativas Essenciais。
+
+29
+00:02:25,466 --> 00:02:31,466
+快讯2：Comparative Overview of Testing Management Tools with Real-World Examples。
+
+30
+00:02:31,966 --> 00:02:37,699
+快讯3：Preventing ReDoS Attacks with Regolith。
+
+31
+00:02:38,199 --> 00:02:42,599
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
