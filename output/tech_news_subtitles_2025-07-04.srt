@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-07-04，我为大家带来499条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Building a Health Symptom Tracker App: From Concept to Launch。据Dev。
+
+9
+00:00:43,600 --> 00:00:49,600
+to报道，Hi, I'm Bronson Salazar, a high school junior who just launched my first
+
+10
+00:00:50,100 --> 00:00:55,700
+real project a Health Symptom Tracker App。
+
+11
+00:00:56,200 --> 00:01:00,733
+What started as a solution for my.
+
+12
+00:01:01,233 --> 00:01:07,233
+第3条新闻：Supercharge Your Workflow: A Developer's Guide to Gemini CLI and Code
+
+13
+00:01:07,733 --> 00:01:09,733
+Assist。
+
+14
+00:01:10,233 --> 00:01:12,766
+据Dev。to报道，Hey devs。
+
+15
+00:01:13,266 --> 00:01:19,266
+AI is transforming the way we work, and now it's coming directly to your command
+
+16
+00:01:19,766 --> 00:01:21,766
+line.
+
+17
+00:01:22,266 --> 00:01:28,266
+Google's Gemini is taking a major step forward with t.
+
+18
+00:01:28,766 --> 00:01:34,766
+第4条新闻：Setting Up Virtual Machines on Linux: Common Mistakes to Avoid。据Dev。
+
+19
+00:01:35,266 --> 00:01:41,266
+to报道，Introduction Virtual machines (VMs) are a powerful tool for running
+
+20
+00:01:41,766 --> 00:01:47,766
+multiple operating systems on a single physical machine。
+
+21
+00:01:48,266 --> 00:01:51,733
+Linux is a popular platfo.
+
+22
+00:01:52,233 --> 00:01:57,700
+第5条新闻：Building Spokane Tech: Part 4。据Dev。
+
+23
+00:01:58,200 --> 00:02:04,200
+to报道，Building Spokane Tech: Part 4 Welcome to part 4 of the "Building Spokane
+
+24
+00:02:04,700 --> 00:02:06,700
+Tech" series。
+
+25
+00:02:07,200 --> 00:02:13,199
+In this article, we look at the initial modeling for the web ap.
+
+26
+00:02:13,699 --> 00:02:15,699
+接下来是今日科技快讯。
+
+27
+00:02:16,199 --> 00:02:22,199
+快讯1：Why Traditional Regression Testing Doesnt Work for MCP Tools。
+
+28
+00:02:22,699 --> 00:02:28,699
+快讯2：Webpack's internals visualized: Explore what it looks like.。
+
+29
+00:02:29,199 --> 00:02:31,199
+快讯3：[Boost]。
+
+30
+00:02:31,699 --> 00:02:36,099
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
