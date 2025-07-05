@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:06,000
+大家好，欢迎收听今日科技播客。今天是2025-07-05，我为大家带来398条最新科技资讯。
+
+2
+00:00:06,500 --> 00:00:08,766
+首先，让我们来看看今天的重点新闻。
+
+3
+00:00:09,266 --> 00:00:15,266
+第1条新闻：How dialog-driven video layering shapes the surreal world of ENA: Dream
+
+4
+00:00:15,766 --> 00:00:17,766
+BBQ。
+
+5
+00:00:18,266 --> 00:00:24,266
+据Unity Blog报道，ENA: Dream BBQ adapts Joel Gs cult-following animated web series
+
+6
+00:00:24,766 --> 00:00:30,366
+into a surreal interactive adventure game。
+
+7
+00:00:30,866 --> 00:00:36,600
+The game follows ENA as she searches for t.
+
+8
+00:00:37,100 --> 00:00:43,100
+第2条新闻：Here are the best Apple Watch deals available right now。
+
+9
+00:00:43,600 --> 00:00:49,600
+据The Verge报道，Editors note: Amazon Prime Day kicks off on July 8th; however, if
+
+10
+00:00:50,100 --> 00:00:56,100
+you want to get a head start on your online shopping, weve rounded up the best
+
+11
+00:00:56,600 --> 00:00:58,600
+early。
+
+12
+00:00:59,100 --> 00:01:05,099
+第3条新闻：Charm of Method Chaining Fluent Interface Patterns in Frameworks。据Dev。
+
+13
+00:01:05,599 --> 00:01:11,599
+to报道，As a junior computer science student, I have experienced a complete
+
+14
+00:01:12,099 --> 00:01:18,099
+transformation in my understanding of developer_experience development。
+
+15
+00:01:18,599 --> 00:01:20,599
+This journ.
+
+16
+00:01:21,099 --> 00:01:26,700
+第4条新闻：Algorithm Engineering Practice。据Dev。
+
+17
+00:01:27,200 --> 00:01:33,200
+to报道，As a junior computer science student, I have experienced a complete
+
+18
+00:01:33,700 --> 00:01:39,700
+transformation in my understanding of learning development。
+
+19
+00:01:40,200 --> 00:01:43,266
+This journey has taugh.
+
+20
+00:01:43,766 --> 00:01:49,766
+第5条新闻：Laravel Context: A Deep Dive into Enhanced Logging and Job Tracing。据Dev。
+
+21
+00:01:50,266 --> 00:01:56,266
+to报道，Unlocking Deeper Insights with Laravel Context: A Game Changer for Logging
+
+22
+00:01:56,766 --> 00:02:02,766
+and Jobs Hey everyone, If you're a Laravel developer, you know that the fra。
+
+23
+00:02:03,266 --> 00:02:05,266
+接下来是今日科技快讯。
+
+24
+00:02:05,766 --> 00:02:10,966
+快讯1：Student Learning Journey Framework。
+
+25
+00:02:11,466 --> 00:02:17,466
+快讯2：Unmasking the Man in the Middle  The Secrets of Secure Connections。
+
+26
+00:02:17,966 --> 00:02:23,966
+快讯3：Type Safe Web Dev Compile Time Error Prevention and Robust Application
+
+27
+00:02:24,466 --> 00:02:26,466
+Architecture。
+
+28
+00:02:26,966 --> 00:02:31,366
+以上就是今天的科技资讯播报。感谢大家的收听，我们明天同一时间再见。
